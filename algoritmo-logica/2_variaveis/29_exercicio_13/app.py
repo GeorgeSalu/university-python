@@ -1,6 +1,6 @@
 """
 Crie uma variavel com a frase: nos estamos procurando o rubi na floresta
-e imprima apenas a palavra rubi da frase 
+e imprima apenas a palavra rubi da frase no console
 """
 frase = "Nós estamos procurando o rubi na floresta"
 
