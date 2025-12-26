@@ -1,6 +1,6 @@
 """
 escreva um programa que le dois numeros
-deposi imprima o maior deles
+depois imprima o maior deles
 """
 numero_um = int(input("Digite um número: "))
 numero_dois = int(input("Digite outro número: "))
