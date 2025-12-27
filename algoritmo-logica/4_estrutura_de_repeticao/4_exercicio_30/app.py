@@ -1,6 +1,7 @@
 """
 crie um loop while em que o fim é determinado pelo numero que o usuario insere no sistema
 imprima os numeros com print
+imprima todos os numeros na tela
 """
 fim = int(input("quando o loop vai terminar : "))
 
