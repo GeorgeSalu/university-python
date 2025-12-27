@@ -1,7 +1,7 @@
 """
 crie um programa com a variavel salario
 se for maior que 1800 imprima uma mensagem de que é necessario pagar imposto de renda
-se nao imprima uma mensagem que nao precisa parr IR
+se não imprima uma mensagem que não precisa parr IR
 """
 salario = float(input("Qual o seu salario? "))
 
