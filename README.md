@@ -1,1 +1,1 @@
-# university-python
+# university python
