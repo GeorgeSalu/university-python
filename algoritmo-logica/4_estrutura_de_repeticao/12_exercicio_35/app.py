@@ -30,4 +30,4 @@ while saque > 0:
         nota_1 = nota_1 + 1
         saque = saque - 1
 
-print("voce vai receber %d notas de R$100, %d notas de R$50, %d notas de R$20, %d notas de R$10 e %d notas de R$1"%(nota_100, nota_50, nota_20, nota_10, nota_1))
+print("voce vai receber %d notas de R$100,%d notas de R$50,%d notas de R$20,%d notas de R$10 e %d notas de R$1"%(nota_100, nota_50, nota_20, nota_10, nota_1))
