@@ -2,7 +2,7 @@
 crie uma lista com numeros de 1 a 10
 percorra a lista com um loop
 quando encontrar o elemento 4 remova-o
-exiba a nova list por print
+exiba a nova lista por print
 """
 lista = []
 
