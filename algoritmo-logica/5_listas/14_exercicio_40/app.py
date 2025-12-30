@@ -1,3 +1,7 @@
+"""
+crie uma lista com 5 elementos de forma dinamica
+ou seja, cada elemento deve ser inserido pelo usuario
+"""
 l = []
 
 i = 0
