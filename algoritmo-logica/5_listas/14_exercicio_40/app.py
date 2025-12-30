@@ -1,6 +1,7 @@
 """
 crie uma lista com 5 elementos de forma dinamica
 ou seja, cada elemento deve ser inserido pelo usuario
+imprima na tela a lista populada de elementos
 """
 l = []
 
