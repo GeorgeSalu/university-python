@@ -10,7 +10,7 @@ print(lista)
 
 i = 0
 while i < 5:
-    numero = int(input("Digite um valor: "))
+    numero = int(input("Digite um numero %d : "%i))
     lista[i] = numero
     i += 1
 
