@@ -1,6 +1,7 @@
 """
 crie uma lista com 5 numeros
 faça um loop baseado na funcao len
+imprima na tela cada numero somando a 10
 """
 
 lista = [5,10,15,20,25]
