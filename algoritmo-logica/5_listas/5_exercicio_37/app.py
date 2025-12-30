@@ -9,7 +9,7 @@ lista = [0,0,0,0,0]
 print(lista)
 
 i = 0
-while i < 5:
+while i < len(lista):
     numero = int(input("Digite um numero %d : "%i))
     lista[i] = numero
     i += 1
