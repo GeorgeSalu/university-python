@@ -8,4 +8,4 @@ for i in lista:
     if i < menor_valor:
         menor_valor = i
 
-print("o menor vlor é o %d" % menor_valor)
+print("o menor valor é o %d" % menor_valor)
