@@ -3,3 +3,9 @@ print(lista)
 
 for n in lista:
     print(n)
+
+## equivalente com while
+i = 0
+while i < len(lista):
+    print(lista[i])
+    i += 1
