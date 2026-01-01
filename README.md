@@ -34,8 +34,8 @@ O conhecimento de algoritmos e lógica de programação é crucial para programa
 
 O que você aprenderá
 
-    Lógica de programação do básico ao avançado, com teoria e exercícios
-    Resolver algorítimos dos mais simples aos mais complexos
-    Programar em Python do iníco até os recursos mais avançados da linguagem
-    Criar softwares em Python
-    Criar projetos em Python
+- Lógica de programação do básico ao avançado, com teoria e exercícios
+- Resolver algorítimos dos mais simples aos mais complexos
+- Programar em Python do iníco até os recursos mais avançados da linguagem
+- Criar softwares em Python
+- Criar projetos em Python
