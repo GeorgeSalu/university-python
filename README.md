@@ -30,3 +30,12 @@ Os algoritmos e a lógica de programação são fundamentais para otimizar o des
 A habilidade de desenvolver algoritmos e aplicar a lógica de programação também é altamente valorizada no mercado de trabalho. Os profissionais que possuem um bom entendimento desses conceitos são capazes de resolver problemas de forma mais eficaz, tornando-os mais procurados pelas empresas.
 
 O conhecimento de algoritmos e lógica de programação é crucial para programadores e desenvolvedores em seu dia a dia. São ferramentas essenciais para a criação de programas funcionais e eficientes, além de serem uma base sólida para o desenvolvimento de habilidades específicas em Python.
+
+
+O que você aprenderá
+
+    Lógica de programação do básico ao avançado, com teoria e exercícios
+    Resolver algorítimos dos mais simples aos mais complexos
+    Programar em Python do iníco até os recursos mais avançados da linguagem
+    Criar softwares em Python
+    Criar projetos em Python
