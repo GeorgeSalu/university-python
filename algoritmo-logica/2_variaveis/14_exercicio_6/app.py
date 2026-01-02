@@ -1,3 +1,11 @@
+"""
+crie uma variavel x = True,y = False e z = False
+faca as comparacoes
+x and y         y or x
+not x           y and z
+x ans x         not y
+y and y         x and z
+"""
 x = True
 y = False
 z = False
