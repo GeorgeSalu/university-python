@@ -1,6 +1,9 @@
 """
 Crie as variaveis: a = 5, b = 3, c = 10, d = 2 e realize as seguintes comparacoes
-a > b; c == a; d != a; a <= c;b > c; a != c; d >= a; a != b; d < c; b >= a;
+a > b;         a != b;     b >= a;
+c == a;        d >= a;     d < c; 
+d != a;        a != c;
+a <= c;        b > c;
 """
 a = 5
 b = 3
