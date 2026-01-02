@@ -1,3 +1,8 @@
+"""
+escreva um expressao que verifica se um aluno atingiu a media escolar que é de 7
+crie tres variaveis com notas distintas
+exiba o resultado com print
+"""
 media = 7
 
 nota_a = 8
