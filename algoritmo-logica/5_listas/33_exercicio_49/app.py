@@ -5,7 +5,7 @@ portas: 2,
 motor: 1,
 janelas: 4,
 adicione a chave teto sonar com valor 1
-delete motor e jenala, imprima o dicionario novamente
+delete as chaves motor e jenala, imprima o dicionario novamente
 """
 carro = {
     "pneus": 4,
