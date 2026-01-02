@@ -1,7 +1,7 @@
 """
 Crie as variaveis: a = 5, b = 3, c = 10, d = 2 e realize as seguintes comparacoes
 a > b;         a != b;     b >= a;
-c == a;        d >= a;     d < c; 
+c == a;        d >= a;     d < c;
 d != a;        a != c;
 a <= c;        b > c;
 """
