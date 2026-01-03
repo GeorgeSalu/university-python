@@ -13,5 +13,5 @@ def retorna_lista_par(l):
     return nova_lista
 
 lista = [1,2,3,4,5,6,7,8]
-lista_pal = retorna_lista_par(lista)
-print(lista_pal)
+lista_par = retorna_lista_par(lista)
+print(lista_par)
