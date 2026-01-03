@@ -1,6 +1,6 @@
 """
 crie uma funcao que exibe a multiplicacao de dois numeros
-os numeros devem ser passaos por parametro
+os numeros devem ser passados por parametro
 """
 def multiplicacao(a, b):
     print(a * b)
