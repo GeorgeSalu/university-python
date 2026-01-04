@@ -16,3 +16,5 @@ def criar_escada(degraus):
 criar_escada(3)
 print("------------------------------")
 criar_escada(10)
+print("------------------------------")
+criar_escada(20)
