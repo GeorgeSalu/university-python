@@ -1,6 +1,11 @@
 """
 escreva uma funcao que desenha uma escada no terminal
 os numeros de degraus deve informados por parametros
+ex:
+#
+##
+###
+####
 """
 def criar_escada(degraus):
     i = 1
