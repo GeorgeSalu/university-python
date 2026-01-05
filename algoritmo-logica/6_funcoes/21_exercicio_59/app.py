@@ -1,3 +1,8 @@
+"""
+crie um programa que gera um numero de 1 a 10
+peca para o usuario adivinhar o numero
+e identifique se ele acertou ou nao
+"""
 import random
 
 aleatorio = random.randint(1,10)
