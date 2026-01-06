@@ -9,4 +9,4 @@ class Aviao:
 
 aviao = Aviao("Aviao hora de codar")
 print(aviao.marca)
-print(aviao.mostrar_asas())
+aviao.mostrar_asas()
