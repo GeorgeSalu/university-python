@@ -1,6 +1,6 @@
 """
 crie um sistema que simule um banco, a classe Banco deve ter um metodo de saque, deposito e transferencia
-propriedades nome do proprietario da conta, saldo
+propriedades como nome do proprietario da conta e saldo
 realizar saques,deposito e transferencia entre contas
 """
 class Banco():
