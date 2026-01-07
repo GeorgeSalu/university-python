@@ -1,5 +1,7 @@
 # university python
 
+### basico/intermediario
+
 Python é uma das linguagens mais versáteis, ela está presente em desenvolvimento web, desktop, mobile, data science, machine learning e muitas outras áreas!
 
 Por que não aprender esta linguagem e entrar no mundo da programação? Esta é a proposta deste curso: desbravar uma das linguagens mais utilizadas mundialmente, abordando todos os principais conceitos da programação como:
@@ -41,6 +43,8 @@ O que você aprenderá
 - Criar projetos em Python
 
 
+### estrutura de dados
+
 sessão estrutura de dados
 
 Estrutura de Dados é uma área da Ciência da Computação que estuda as técnicas computacionais para a organização e manipulação eficiente de quaisquer quantidade de informações. Em outras palavras, quando você desenvolver um sistema deve pensar em quais estruturas de dados devem ser utilizadas; sendo que a escolha de determinada estrutura de dados influenciará no desempenho do software. Em outras palavras, entender sobre estrutura de dados é essencial para garantir que os algoritmos sejam eficientes, tanto em tempo de execução quanto em métricas de avaliação de desempenho.
@@ -49,23 +53,15 @@ Estrutura de Dados é uma área da Ciência da Computação que estuda as técni
 Baseado nisso, nesse curso você vai aprender a teoria e implementará passo a passo as principais estruturas de dados existentes! Um dos diferenciais deste curso é que não usaremos bibliotecas prontas, ou seja, todas as implementações serão feitas do zero utilizando a linguagem de programação Python. Desta forma, além de entender a teoria você também terá um forte embasamento técnico sobre como implementar cada uma delas. E não há problema caso você seja novo(a) na linguagem Python, pois no início do curso você pode assistir mais de 2 (duas) horas de conteúdo com o básico dessa linguagem! Veja abaixo o que você vai aprender:
 
 
-    Notação Big-O para análise de algoritmos
-
-    Vetores ordenados e não ordenados
-
-    Pilhas, filas e deques
-
-    Listas encadeadas simples, listas encadeadas com extremidade dupla e listas duplamente encadeadas
-
-    Recursão
-
-    Algoritmos de ordenação: bubble sort, selection sort, insertion sort, shell sort, merge sort e quick sort
-
-    Árvores binárias de busca
-
-    Grafos
-
-    Algoritmos de busca em grafos, como busca gulosa e busca A Estrela (A*) da área de Inteligência Artificial e o clássico algoritmo de Dijkstra
+- Notação Big-O para análise de algoritmos
+- Vetores ordenados e não ordenados
+- Pilhas, filas e deques
+- Listas encadeadas simples, listas encadeadas com extremidade dupla e listas duplamente encadeadas
+- Recursão
+- Algoritmos de ordenação: bubble sort, selection sort, insertion sort, shell sort, merge sort e quick sort
+- Árvores binárias de busca
+- Grafos
+- Algoritmos de busca em grafos, como busca gulosa e busca A Estrela (A*) da área de Inteligência Artificial e o clássico algoritmo de Dijkstra
 
 
 
