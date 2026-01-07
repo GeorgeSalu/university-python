@@ -1,6 +1,6 @@
-# university python
+# University python
 
-### Básico/intermediario
+### Básico/Intermediario
 
 Python é uma das linguagens mais versáteis, ela está presente em desenvolvimento web, desktop, mobile, data science, machine learning e muitas outras áreas!
 
