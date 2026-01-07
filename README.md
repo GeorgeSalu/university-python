@@ -39,3 +39,37 @@ O que você aprenderá
 - Programar em Python do iníco até os recursos mais avançados da linguagem
 - Criar softwares em Python
 - Criar projetos em Python
+
+
+sessão estrutura de dados
+
+Estrutura de Dados é uma área da Ciência da Computação que estuda as técnicas computacionais para a organização e manipulação eficiente de quaisquer quantidade de informações. Em outras palavras, quando você desenvolver um sistema deve pensar em quais estruturas de dados devem ser utilizadas; sendo que a escolha de determinada estrutura de dados influenciará no desempenho do software. Em outras palavras, entender sobre estrutura de dados é essencial para garantir que os algoritmos sejam eficientes, tanto em tempo de execução quanto em métricas de avaliação de desempenho.
+
+
+Baseado nisso, nesse curso você vai aprender a teoria e implementará passo a passo as principais estruturas de dados existentes! Um dos diferenciais deste curso é que não usaremos bibliotecas prontas, ou seja, todas as implementações serão feitas do zero utilizando a linguagem de programação Python. Desta forma, além de entender a teoria você também terá um forte embasamento técnico sobre como implementar cada uma delas. E não há problema caso você seja novo(a) na linguagem Python, pois no início do curso você pode assistir mais de 2 (duas) horas de conteúdo com o básico dessa linguagem! Veja abaixo o que você vai aprender:
+
+
+    Notação Big-O para análise de algoritmos
+
+    Vetores ordenados e não ordenados
+
+    Pilhas, filas e deques
+
+    Listas encadeadas simples, listas encadeadas com extremidade dupla e listas duplamente encadeadas
+
+    Recursão
+
+    Algoritmos de ordenação: bubble sort, selection sort, insertion sort, shell sort, merge sort e quick sort
+
+    Árvores binárias de busca
+
+    Grafos
+
+    Algoritmos de busca em grafos, como busca gulosa e busca A Estrela (A*) da área de Inteligência Artificial e o clássico algoritmo de Dijkstra
+
+
+
+
+
+
+
