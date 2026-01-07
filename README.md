@@ -45,7 +45,6 @@ O que você aprenderá
 
 ### estrutura de dados
 
-sessão estrutura de dados
 
 Estrutura de Dados é uma área da Ciência da Computação que estuda as técnicas computacionais para a organização e manipulação eficiente de quaisquer quantidade de informações. Em outras palavras, quando você desenvolver um sistema deve pensar em quais estruturas de dados devem ser utilizadas; sendo que a escolha de determinada estrutura de dados influenciará no desempenho do software. Em outras palavras, entender sobre estrutura de dados é essencial para garantir que os algoritmos sejam eficientes, tanto em tempo de execução quanto em métricas de avaliação de desempenho.
 
