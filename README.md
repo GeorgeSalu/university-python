@@ -64,7 +64,7 @@ Baseado nisso, nesse curso você vai aprender a teoria e implementará passo a p
 - Algoritmos de busca em grafos, como busca gulosa e busca A Estrela (A*) da área de Inteligência Artificial e o clássico algoritmo de Dijkstra
 
 
-
+Todos os exemplos serão desenvolvidos passo a passo e sem pressa, para que você consiga entender perfeitamente cada implementação. Além disso, faremos debug passo a passo nos códigos para que você entenda exatamente o que cada algoritmo faz! 
 
 
 
