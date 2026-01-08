@@ -1,6 +1,6 @@
 # University python
 
-### Básico/Intermediario
+### Básico/Intermediário
 
 Python é uma das linguagens mais versáteis, ela está presente em desenvolvimento web, desktop, mobile, data science, machine learning e muitas outras áreas!
 
@@ -64,7 +64,6 @@ Baseado nisso, nesse curso você vai aprender a teoria e implementará passo a p
 
 
 Todos os exemplos serão desenvolvidos passo a passo e sem pressa, para que você consiga entender perfeitamente cada implementação. Além disso, faremos debug passo a passo nos códigos para que você entenda exatamente o que cada algoritmo faz! 
-
 
 
 
