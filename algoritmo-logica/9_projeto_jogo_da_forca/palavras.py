@@ -1,6 +1,6 @@
 palavras = [
   'Abacaxi',
-  'Abóbora',
+  'Abobora',
   'Peixe',
   'Batata',
   'Queijo',
@@ -16,7 +16,7 @@ palavras = [
   'Fone',
   'Telefone',
   'Flor',
-  'Câmera',
+  'Camera',
   'Suporte',
   'Espada',
   'Machado'
