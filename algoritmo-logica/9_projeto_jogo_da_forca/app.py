@@ -8,15 +8,12 @@ def selecionar_palavra():
 
 # iniciar o jogo
 def jogar(palavra):
-    # defininco variaveis
+    # definindo variaveis
     palavra_a_completar = "_"*len(palavra)
     advinhou = False
     letras_utilizadas = []
     palavras_utilizadas = []
     tentativas = 6
-
-    print(palavra)
-    print(palavra_a_completar)
 
     # boas vindas ao jogador
     print("vamos jogar")
