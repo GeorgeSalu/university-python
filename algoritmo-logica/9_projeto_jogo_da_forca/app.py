@@ -6,6 +6,24 @@ def selecionar_palavra():
     palavra = random.choice(palavras)
     return palavra.upper()
 
+# iniciar o jogo
+def jogar(palavra):
+    # defininco variaveis
+    palavra_a_completar = "_"*len(palavra)
+    advinhou = False
+    letras_utilizadas = []
+    palavras_utilizadas = []
+    tentativas = 6
+
+    print(palavra)
+    print(palavra_a_completar)
+
+    # boas vindas ao jogador
+    print("vamos jogar")
+    print(exibir_forca(tentativas))
+    print("esta é a palavra: %s"%palavra_a_completar)
+
+
 # status do jogo
 def exibir_forca(tentativas):
     estagios = [  # Fim de jogo
@@ -81,3 +99,4 @@ def exibir_forca(tentativas):
     ]
 
     return estagios[tentativas]
+
