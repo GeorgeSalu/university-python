@@ -8,17 +8,80 @@ def selecionar_palavra():
 
 # iniciar o jogo
 def jogar(palavra):
-    # definindo variaveis
-    palavra_a_completar = "_"*len(palavra)
-    advinhou = False
-    letras_utilizadas = []
-    palavras_utilizadas = []
-    tentativas = 6
+  # Definir algumas variáveis
+  palavra_a_completar = "_" * len(palavra) # _ _ _ _ _ _
+  advinhou = False
+  letras_utilizadas = []
+  palavras_utilizadas = []
+  tentativas = 6
 
-    # boas vindas ao jogador
-    print("vamos jogar")
+  # Boas vindas ao jogador
+  print("Vamos jogar!")
+  print(exibir_forca(tentativas))
+  print("Esta é a palavra: %s" % palavra_a_completar)
+
+  # Enquanto o usuário não advinhar e ainda houver tentativas
+  while not advinhou and tentativas > 0:
+
+    tentativa = input("Digite uma palavra ou letra para continuar: ").upper()
+
+    # TENTATIVA DE LETA ÚNICA
+    # Verificar se a tentativa é uma única letra
+    if len(tentativa) == 1 and tentativa.isalpha():
+      # Verificar se a letra já foi utilizada
+      if tentativa in letras_utilizadas:
+        print("Você já utilizou esta letra antes: %s" % tentativa)
+      # Verifica se a tentativa não está na palavra
+      elif tentativa not in palavra:
+        print("A letra %s não está na palavra" % tentativa)
+        tentativas -= 1
+        letras_utilizadas.append(tentativa)
+      # Quando a letra está na palavra
+      else:
+        print("Você acertou! A letra %s está na palavra" % tentativa)
+        letras_utilizadas.append(tentativa)
+        # Transformar a palavra em uma lista
+        palavra_lista = list(palavra_a_completar)
+
+        # Verifica onde pode substituir o underline baseado na letra que foi passada
+        indices = [i for i, letra in enumerate(palavra) if letra == tentativa]
+        for indice in indices:
+          palavra_lista[indice] = tentativa
+
+        palavra_a_completar = "".join(palavra_lista)
+
+        if "_" not in palavra_a_completar:
+          advinhou = True
+    # TENTATIVA DE PALAVRA COMPLETA
+    # Quando o usuário tenta advinhar a palavra toda da forca
+    elif len(tentativa) == len(palavra) and tentativa.isalpha():
+
+      # Palavra já utiliza
+      if tentativa in palavras_utilizadas:
+        print("Você já utilizou está palavra %s" % tentativa)
+      # Palavra está errada
+      elif tentativa != palavra:
+        print("A palavra %s está incorreta!" % tentativa)
+        tentativas -= 1
+        palavras_utilizadas.append(tentativa)
+      # Acertou a palavra
+      else:
+        advinhou = True
+        palavra_a_completar = palavra
+
+    # Tentativa inválida
+    else:
+      print("Tentativa inválida, tente novamente!")
+
+    # Exibir o status do jogo
     print(exibir_forca(tentativas))
-    print("esta é a palavra: %s"%palavra_a_completar)
+    print(palavra_a_completar)
+
+  # Finaliza o jogo se o usuário advinhou a palavra ou acabaram as tentativas
+  if advinhou:
+    print("Parabéns! Você acertou a palavra")
+  else:
+    print("Acabaram as tentivas, a palavra era: %s" % palavra)
 
 
 # status do jogo
