@@ -100,3 +100,9 @@ def exibir_forca(tentativas):
 
     return estagios[tentativas]
 
+# iniciaçõ do jogo e continuar jogando
+def iniciar():
+    palavra = selecionar_palavra()
+    jogar(palavra)
+
+iniciar()
