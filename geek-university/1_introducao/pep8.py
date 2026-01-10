@@ -11,4 +11,8 @@ A ideia da PEP8 é que possamos escrever codigos Python de forma Pythonica
 [4] - linhas em branco
     - separar funcoes e definicoes de classe com duas linha em branco
     - metodos dentro de uma classe devem ser separados com uma unica linha em branco
+[5] - Imports
+    - imports devem ser feitos em linhas separadas
+[6] - Espaços em expressoes e intrucoes
+[7] - termine sempre uma instrucao com uma nova linha
 """
