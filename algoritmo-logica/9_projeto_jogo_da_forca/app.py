@@ -162,6 +162,10 @@ def exibir_forca(tentativas):
 
 # iniciaçõ do jogo e continuar jogando
 def iniciar():
+  palavra = selecionar_palavra()
+  jogar(palavra)
+  # Quando acaba o jogo, verifica se o usuário quer continuar jogando
+  while input("Jogar novamente? (S/N)").upper() == "S":
     palavra = selecionar_palavra()
     jogar(palavra)
 
