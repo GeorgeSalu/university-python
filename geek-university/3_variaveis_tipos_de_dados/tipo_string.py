@@ -22,3 +22,7 @@ nome4 = """geek
 university"""
 print(nome4)
 print(type(nome4))
+
+nome5 = "geek university"
+print(nome5.upper())
+print(nome5.lower())
