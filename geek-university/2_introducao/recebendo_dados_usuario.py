@@ -1,12 +1,19 @@
 """
 recebendo dados do usuario
+
+input() -> todo dado recebido via input é do tipo string
+
+Em python,string e tudo que estiver entre:
+- aspas simples
+- aspas duplas
+- aspas simples triplas
+- aspas duplas triplas
+
 """
 # entrada de dados
-print("qual seu nome ? ")
-nome = input()
-print("seja bem-vindo {0}".format(nome))
+nome = input("qual seu nome ? ")
+print(f"Seja bem vindo {nome}")
 
-print("qual sua idade ? ")
-idade = input()
+idade = int(input("qual sua idade ? "))
 
-print("a {0} tem {1} anos".format(nome, int(idade)))
+print(f"A {nome} tem {idade} anos")
