@@ -23,7 +23,7 @@ print(nao_existo)
 # escopo local
 numero3 = 42
 if numero3 > 10:
-    novo = numero3 + 10 # a varivei 'novo' esta declarada localmente dentro do bloco do if, portanto é local
+    novo = numero3 + 10 # a variavel 'novo' esta declarada localmente dentro do bloco do if, portanto é local
     print(novo)
 
 print(novo)
