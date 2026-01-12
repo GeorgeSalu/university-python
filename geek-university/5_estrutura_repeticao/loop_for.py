@@ -16,3 +16,17 @@ for numero in lista:
 # interando em um range
 for numero in numeros:
     print(numero)
+
+print("********************************************")
+# enumerated
+for indice, valor in enumerate(nome):
+    print(indice, valor)
+
+for indice, letra in enumerate(nome):
+    print(letra)
+
+# quando não precisamos de uma valor, podemos descarta-lo utilizando um underline (_)
+for _, letra in enumerate(nome):
+    print(letra)
+
+print("********************************************")
