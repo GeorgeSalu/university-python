@@ -45,3 +45,25 @@ print(lista1)
 # adicionando mas de um elemento
 lista1.extend([123,44,67]) # coloca cada elemento da lista como valor adicional a lista
 print(lista1)
+
+# podemos inserir um novo elemento na lista informando a posicao do indice
+lista1.insert(2,"novo valor")
+print(lista1)
+
+# podemos facilmente juntar duas listas
+lista6 = lista1 + lista2
+print(lista6)
+
+# lista reversa
+lista1.reverse()
+lista2.reverse()
+print(lista1)
+print(lista2)
+
+# lista reversa forma 2
+print(lista1[::-1])
+print(lista2[::-1])
+
+# copiar lista
+lista6 = lista2.copy()
+print(lista6)
