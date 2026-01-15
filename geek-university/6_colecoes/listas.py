@@ -20,3 +20,28 @@ lista2 = ['g','e','e','k',' ','u','n','i','v','e','r','s','i','t','y']
 lista3 = []
 lista4 = list(range(11))
 lista5 = list('geek university')
+
+# podemos checar se determinado valor esta contido na lista
+num = 7
+if num in lista4:
+    print(f"encontrei o numero {num}")
+else:
+    print(f"nao encontrei o numero {num}")
+
+# podemos facilmente ordenar uma lista
+lista1.sort()
+print(lista1)
+
+# podemos facilmente contar o numero de ocorrencia de uma valor em uma lista
+print(lista1.count(1))
+print(lista1.count('e'))
+
+# adicionar elementos em listas
+# para adicionar elementos em listas utilizamos a função append
+print(lista1)
+lista1.append(42)
+print(lista1)
+
+# adicionando mas de um elemento
+lista1.extend([123,44,67]) # coloca cada elemento da lista como valor adicional a lista
+print(lista1)
