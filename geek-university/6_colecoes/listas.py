@@ -67,3 +67,41 @@ print(lista2[::-1])
 # copiar lista
 lista6 = lista2.copy()
 print(lista6)
+
+# podemos contar quanto elementos existem dentro da lista
+print(len(lista1))
+
+# podemos remover facilmente o ultimo elemento de uma lista
+print(lista5)
+lista5.pop()
+print(lista5)
+
+# podemos remover um elemento pelo indice
+# obs: os elementos a direita deste indice serão deslocados para a esquerda
+# obs: se não houver elemento no indice informado, teremos o erro IndexError
+lista5.pop(2)
+print(lista5)
+
+# podemos remover todos os elementos (zerar a lista)
+print(lista5)
+lista5.clear()
+print(lista5)
+
+# podemos facilmente converter uma string para uma lista
+# exemplo 1
+curso = "programacao pyhton - essencial"
+print(curso)
+curso = curso.split()
+print(curso)
+
+# convertendo uma lista em uma string
+lista6 = ['programacao','em','python','essencial']
+print(lista6)
+
+# abaixo estamos falando: pega a lista6, coloca espaço entre cada elemento e transforma em uma string
+curso = ' '.join(lista6)
+print(curso)
+
+# baixo estamos falando: pega a lista6, coloca cifrao entre cada elemento e transforma em uma string
+curso = '$'.join(lista6)
+print(curso)
