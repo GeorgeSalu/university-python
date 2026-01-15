@@ -30,3 +30,20 @@ tupla = tuple(range(11))
 print(tupla)
 print(type(tupla))
 
+# desempacotamento de tupla
+tupla = ('geek university',"programacao python")
+
+escola, curso = tupla
+print(escola)
+print(curso)
+
+# obs: gera erro(ValueError) se colocarmos um numero diferente de elementos para desempacotar
+
+# metodos para adição e remoção de elemetos nas tuplas não existem, dado o fato que as tuplas são imutaveis
+
+# soma, valor maximo, valor minimo e tamanho
+tupla = (1,2,3,4,5,6)
+print(sum(tupla))
+print(max(tupla))
+print(min(tupla))
+print(len(tupla))
