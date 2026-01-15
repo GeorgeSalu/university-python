@@ -24,3 +24,9 @@ tupla4 = (4,)
 print(tupla4)
 print(type(tupla4))
 # conclusão: podemos concluir que tuplas são definidas pela vigula e não pelo usuo do parenteses
+
+# podemos gerar uma tupla dinamicamente com range(inicio,fim,passo)
+tupla = tuple(range(11))
+print(tupla)
+print(type(tupla))
+
