@@ -12,7 +12,7 @@ linguagens c/java: arrays
  - dinamico: não possuem tamanho fixo; ou seja, podemos criar a lista e simplesmente ir adicionando elementos
  - Qualquer tipo de dado: não possuem tipo de dado fixo: ou seja, podemos colocar qualquer tipo de dado
 
- as listas em python são representass por colchetes: []
+ as listas em python são representadas por colchetes: []
 """
 type([])
 lista1 = [1,2,3,4,5,4,3,22,11]
