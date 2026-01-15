@@ -193,6 +193,6 @@ nova.append(4)
 print(lista)
 print(nova)
 
-# veja que utilizamos a copia via atribuição e copiamos os dados da lista para uma nova lista , ms
-# apos relizar uma modificação em uma das listas,essa modificação se refletiu em ambas as litas
+# veja que utilizamos a cópia via atribuição e copiamos os dados da lista para uma nova lista , ms
+# após realizar uma modificação em uma das listas,essa modificação refletiu-se em ambas as litas
 # isso em python é chamado de shallow copy
