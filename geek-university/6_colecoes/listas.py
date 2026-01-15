@@ -105,3 +105,62 @@ print(curso)
 # baixo estamos falando: pega a lista6, coloca cifrao entre cada elemento e transforma em uma string
 curso = '$'.join(lista6)
 print(curso)
+
+# interando sobre listas
+# utilizando for
+soma = 0
+for elemento in lista4:
+    print(elemento)
+    soma = soma + elemento
+print(soma)
+
+# utilizando while
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print("adicione um produto na lista ou digite 'sair' para sair")
+    produto = input()
+    if produto != 'sair':
+        carrinho.append(produto)
+
+for produto in carrinho:
+    print(produto)
+
+
+# utilizando variaveis em listas
+numeros = [1,2,3,4,5]
+print(numeros)
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
+
+numeros = [num1,num2,num3,num4,num5]
+print(numeros)
+
+# soma, valor maximo, valor minimo e tamanho
+lista = [1,2,3,4,5]
+
+print(sum(lista))
+print(max(lista))
+print(min(lista))
+print(len(lista))
+
+# transformando listas em tuplas
+lista = [1,2,3,4,5]
+print(lista)
+print(type(lista))
+
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
+
+# desempacotamento de listas
+lista = [1,2,3]
+
+num1, num2, num3 = lista
+print(num1)
+print(num2)
+print(num3)
