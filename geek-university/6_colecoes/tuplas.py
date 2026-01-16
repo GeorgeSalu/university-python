@@ -70,3 +70,27 @@ print(tupla1)
 # verificar se determinado elemento esta contido na tupla
 tupla = (1,2,3,4,5,6)
 print( 3 in tupla)
+
+# iterando sobre uma tupla
+tupla = (1,2,3,4,5,6)
+
+for n in tupla:
+    print(n)
+
+for indice, valor in enumerate(tupla):
+    print(indice, valor)
+
+# contando elementos dentro de uma tupla
+tupla = ('a','b','c','d')
+
+print(tupla.count('a'))
+
+escola = tuple('geek university')
+print(escola)
+
+print(escola.count('e'))
+
+# dicas na utilizacao de tuplas
+# devemos utilizar sempre que não precisamos modificar os dados contidos em uam coleção
+# exemplo 1
+meses = ('janeiro', 'fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')
