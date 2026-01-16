@@ -33,3 +33,31 @@ print(paises['eua'])
 # forma 2 - acessando via get - recomendado
 print(paises.get('br'))
 print(paises.get('eua'))
+
+russia = paises.get('ru')
+
+# podemos definir um valor padrao para caso nao encontremos o objeto com a chave informada
+# caso o get não encontre o objeto com a chave informada sera retornado o valor None e não sera gerado KeyError
+russia2 = paises.get('ru','não encontrado')
+
+if russia:
+    print('encontrei o pais')
+else:
+    print('nao encontrei o pais')
+
+
+# podemos verificar se determinada chave se encontra em um dicionario
+print('br' in paises)
+print('ru' in paises)
+print('estados unidos' in paises)
+
+# podemos utilizar qualquer tipo de dado (int, float, string, boolean) inclusive lista, tupla, dicionario
+
+localidades = {
+    (35.6895, 39.6917): 'escritorio em tokio',
+    (40.7128, 74.0060): 'escritorio em nova york',
+    (37.7749, 122.4194): 'escritorio em sao paulo',
+}
+
+print(localidades)
+print(type(localidades))
