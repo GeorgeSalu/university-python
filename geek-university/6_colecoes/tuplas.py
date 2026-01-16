@@ -92,5 +92,24 @@ print(escola.count('e'))
 
 # dicas na utilizacao de tuplas
 # devemos utilizar sempre que não precisamos modificar os dados contidos em uam coleção
-# exemplo 1
+# exemplo: 1
 meses = ('janeiro', 'fevereiro','marco','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')
+print(meses)
+
+# o acesso elementos de uma tupla também é semelhante a de uma lista
+print(meses[5])
+
+# iterar com while
+i = 0
+while i < len(meses):
+    print(meses[i])
+    i += 1
+
+# verificamos em qual indice um elemento esta na tupla
+print(meses.index('fevereiro'))
+# obs: caso o elemento não exista, será gerado ValueError
+
+# slicing
+# tupla[inicio:fim:passo]
+print(meses[5:])
+print(meses[5:9])
