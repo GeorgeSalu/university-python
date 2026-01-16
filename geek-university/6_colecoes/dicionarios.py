@@ -61,3 +61,20 @@ localidades = {
 
 print(localidades)
 print(type(localidades))
+
+# tuplas, por exemplo, são btante interessantes de serem utilizadas como chave de dicionários, pois as mesmas são imutaveis
+
+# adicionando elementos em um dicionário
+
+receita = {'jan': 100, 'fev': 200, 'mar': 300}
+print(receita)
+print(type(receita))
+
+# forma 1
+receita['abr'] = 350
+print(receita)
+
+# forma 2
+novo_dado = {'mai': 500}
+receita.update(novo_dado)
+print(receita)
