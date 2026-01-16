@@ -113,3 +113,26 @@ print(meses.index('fevereiro'))
 # tupla[inicio:fim:passo]
 print(meses[5:])
 print(meses[5:9])
+
+# por que utilizar tuplas ?
+# - tuplas ão mais rapidas do que listas
+# - tuplas deixam o seu codigo mais seguro
+# * isso por que trabalhar com elementos imutaveis traz seguranga para o codigo
+
+# copiando uma tupla para outra
+
+tupla = (1,2,3,4,5,6)
+print(tupla)
+
+nova = tupla
+
+print(nova)
+print(tupla)
+
+outra = (4,5,6)
+nova = nova + outra
+
+print(nova)
+print(tupla)
+
+# tupla nao tem o problema de shallow copy
