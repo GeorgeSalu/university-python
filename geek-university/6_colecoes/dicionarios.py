@@ -1,7 +1,7 @@
 """
 dicionarios
 
-obs: em algumas linguagens de programacao, os dicionarios pyhton são conhecidos como mapas
+obs: em algumas linguagens de programacao, os dicionários pyhton são conhecidos como mapas
 
 dicionarios são coleções do tipo chave/valor
 dicionarios são representados por chaves {}
@@ -12,7 +12,7 @@ obs: sobre dicionarios
  - tanto chave quanto valor podem ser de qualquer tipo de dado
  - podemos misturar tipos de dados
 """
-#  criacao de dicionarios
+#  criacao de dicionários
 # forma 1 (mais comum)
 paises = {'br': 'brasil', 'eua': 'estados unidos', 'py':'paraguai'}
 print(paises)
@@ -36,8 +36,8 @@ print(paises.get('eua'))
 
 russia = paises.get('ru')
 
-# podemos definir um valor padrao para caso nao encontremos o objeto com a chave informada
-# caso o get não encontre o objeto com a chave informada sera retornado o valor None e não sera gerado KeyError
+# podemos definir um valor padrao para caso não encontremos o objeto com a chave informada
+# caso o get não encontre o objeto com a chave informada será retornado o valor None e não será gerado KeyError
 russia2 = paises.get('ru','não encontrado')
 
 if russia:
@@ -46,7 +46,7 @@ else:
     print('nao encontrei o pais')
 
 
-# podemos verificar se determinada chave se encontra em um dicionario
+# podemos verificar se determinada chave se encontra em um dicionário
 print('br' in paises)
 print('ru' in paises)
 print('estados unidos' in paises)
