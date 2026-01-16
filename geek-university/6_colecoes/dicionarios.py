@@ -78,3 +78,36 @@ print(receita)
 novo_dado = {'mai': 500}
 receita.update(novo_dado)
 print(receita)
+
+# atualizando dados em um dicionário
+
+# forma 1
+receita['mai'] = 500
+print(receita)
+
+# forma 2
+receita.update({'mai': 600})
+print(receita)
+
+# conclusao 1: a forma de adicionar novos elementos ou atualizar dados em um dicionario é a mesma
+# conclusao 2: em dicionários, não podemos ter chaves repetidas
+
+# remover dados de um dicionario
+receita = {'jan': 100, 'fev': 200, 'mar': 300}
+print(receita)
+
+# forma 1 - mais comum
+ret = receita.pop('mar')
+print(ret)
+
+print(receita)
+
+# obs: aqui precisamos sempre informar a chave, e caso não encontre o elemento, um KeyError e retornado
+# obs: ao removermos um objeto,o valor desre objeto é sempre retornado
+
+# forma 2
+
+del receita['fev']
+print(receita)
+
+# se a chave não existir será gerado um KeyError
