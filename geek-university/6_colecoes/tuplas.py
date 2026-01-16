@@ -47,3 +47,26 @@ print(sum(tupla))
 print(max(tupla))
 print(min(tupla))
 print(len(tupla))
+
+# concatenacao de tuplas
+tupla1 = (1,2,3,4,5,6)
+print(tupla1)
+
+tupla2 = (7,8,9,0)
+print(tupla2)
+
+print(tupla1 + tupla2) # tuplas são imutaveis
+print(tupla1)
+print(tupla2)
+
+tupla3 = tupla1 + tupla2
+print(tupla3)
+print(tupla1)
+print(tupla2)
+
+tupla1 = tupla1 + tupla2 # tuplas são imutaveis, mas podemos sobrescrever os seus valores
+print(tupla1)
+
+# verificar se determinado elemento esta contido na tupla
+tupla = (1,2,3,4,5,6)
+print( 3 in tupla)
