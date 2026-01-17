@@ -68,7 +68,7 @@ for valor in s:
 
 # usos interessantes com sets
 
-# imagine que fizemos um formulario de cadastro de visitantes em uma feira ou museu e os visitantes
+# imagine que fizemos um formulario de cadastro de visitantes numa feira ou museu e os visitantes
 # informam manualmente a cidade de onde vieram.
 
 # Nós adicionamos cada cidade numa lista python, já que numa lista podemos adicionar novos elementos
@@ -126,3 +126,15 @@ novo.add(4)
 
 print(novo)
 print(s)
+
+# podemos remover todos os itens de um conjunto
+s.clear()
+print(s)
+
+# metodos matematicos de conjuntos
+
+# imagine que temos dois conjuntos: um contendo estudantes do curso python e um
+# contendo estudantes do curso de java
+
+estudantes_python = {'marcos','patricia','ellen','pedro','julia','guilherme'}
+estudantes_java = {'fernendo','gustavo','julia','ana','patricia'}
