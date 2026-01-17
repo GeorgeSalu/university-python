@@ -39,3 +39,47 @@ else:
     print('nao tem o 3')
 
 # importante lembrar que, além de não termos valores duplicados, não temos ordem
+
+# listas aceitam valores duplicados
+lista = [99,2,34,23,2,12,1,44,5,34]
+print(f'Lista {lista}')
+
+# tuplas aceitam valores duplicados
+tupla = 99,2,34,2,12,1,44,5,34
+print(f'Tupla {tupla}')
+
+# dicionarios nõo aceitam chaves duplicadas
+dicionario = {}.fromkeys([99,2,34,2,12,1,44,5,34],'dict')
+print(f'Dicionario {dicionario}')
+
+# conjuntos não aceitam valores duplicados
+conjunto = {99,2,34,2,12,1,44,5,34}
+print(f'Conjunto {conjunto}')
+
+
+# assim como todos outro conjunto python podemos colocar tipos de dados misturados em Sets
+s = {1,'b',True,33.3,44}
+print(s)
+print(type(s))
+
+# podemos interar num set normalmente
+for valor in s:
+    print(valor)
+
+# usos interessantes com sets
+
+# imagine que fizemos um formulario de cadastro de visitantes em uma feira ou museu e os visitantes
+# informam manualmente a cidade de onde vieram.
+
+# Nós adicionamos cada cidade numa lista python, já que numa lista podemos adicionar novos elementos
+# e ter repetição
+
+cidades = ['belo horizonte','sao paulo','campo grande','cuiaba','sao paulo','cuiaba']
+print(cidades)
+print(len(cidades))
+
+# Agora precisamos saber quantas cidades distintas, ou seja, unicas, temos
+# o que você faria ? Faria um loop na lista ... ?
+# Podemos utilizar o set para isso
+
+print(len(set(cidades)))
