@@ -83,3 +83,46 @@ print(len(cidades))
 # Podemos utilizar o set para isso
 
 print(len(set(cidades)))
+
+# adicionando elementos em um conjunto
+s = {1,2,3,4,5,6,7,2,3}
+
+s.add(4)
+s.add(4) # duplicidade não gera erro, simplesmente é ignorado e não é adicionado
+print(s)
+
+# remover elementos em um conjunto
+s = {1,2,3,4,5,6,7,2,3}
+print(s)
+
+# fomra 1
+s.remove(3) # não é indice! informamos o valor a ser removido
+print(s)
+
+# obs: caso o valor não seja encontrado será gerado o erro KeyError
+
+# forma 2
+s.discard(2)
+print(s)
+
+# obs: se o valor não for encontrado, nenhum erro é gerado
+
+# copiando um conjunto para outro...
+s = {1,2,3,4,5,6,7,2,3}
+
+# forma 1 - deep copy
+novo = s.copy()
+print(novo)
+
+novo.add(4)
+
+print(novo)
+print(s)
+
+# forma 2
+novo = s
+
+novo.add(4)
+
+print(novo)
+print(s)
