@@ -138,3 +138,24 @@ print(s)
 
 estudantes_python = {'marcos','patricia','ellen','pedro','julia','guilherme'}
 estudantes_java = {'fernendo','gustavo','julia','ana','patricia'}
+
+# veja que alguns alunos esque estudam python também estudam java
+# precisamos gerar um conjunto com nomes de estudantes unicos
+# forma 1 - utilizando union
+
+unicos1 = estudantes_python.union(estudantes_java)
+print(unicos1)
+
+# forma 2 - utilizando o caracter pipe
+unicos2 = estudantes_python | estudantes_java
+print(unicos2)
+
+# gerar um conjunto de estudantes que estão em ambos os cursos
+# forma 1 - utilizando intersection
+ambos1 = estudantes_python.intersection(estudantes_java)
+print(ambos1)
+
+# forma 2 - utilizando &
+ambos2 = estudantes_python & estudantes_java
+print(ambos2)
+
