@@ -159,3 +159,17 @@ print(ambos1)
 ambos2 = estudantes_python & estudantes_java
 print(ambos2)
 
+# gerar um conjunto de estudantes que não estão no outro curso
+so_python = estudantes_python.difference(estudantes_java)
+print(so_python)
+
+so_java = estudantes_java.difference(estudantes_python)
+print(so_java)
+
+# soma, valor maximo, valor minimo e tamanho
+s = {1,2,3,4,5,6,7,2,3}
+
+print(sum(s))
+print(max(s))
+print(min(s))
+print(len(s))
