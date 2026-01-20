@@ -7,3 +7,12 @@ na tela esta soma.
 c) Modifique a lista na posição 5, atribuindo a esta posição o valor 100.
 d) Mostre na tela cada valor da lista A, um em cada linha.
 """
+a: list[int] = [1, 0, 5, -2, -5, 7]
+
+soma: int = a[0] + a[1] + a[5];
+print(f'a soma dos valores he {soma}')
+
+a[5] = 100
+
+for valor in a:
+    print(valor)
