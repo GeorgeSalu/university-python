@@ -22,7 +22,7 @@ print(quadrado(5))
 ret = quadrado(6)
 print(ret)
 
-# Funções podem ter n parametros de entrada. ou seja,podemos receber como entrada
+# Funções podem ter n parametros de entrada. Ou seja,podemos receber como entrada
 # numa função qquantos parametros forem necessarios, eles são separados por vírgula
 
 # exemplos
