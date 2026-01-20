@@ -8,7 +8,7 @@ obs:
 obs: sobre a palavra reservada return
 - ela finaliza a função, ou seja, ela sai da execução da função
 - podemos ter,numa função, diferentes returns
-- podemos, numa função, retornar qualquer tipo de dado e ate mesmo multiplos valores
+- podemos, numa função, retornar qualquer tipo de dado e até mesmo multiplos valores
 """
 # exemplo 1
 def quadrado_de_7():
