@@ -34,3 +34,25 @@ def outra_funcao():
 
 print(outra_funcao())
 print(type(outra_funcao()))
+
+# vamor criar uma funcao pra jogar a moeda
+from random import random
+
+def jogar_moeda():
+    # gera um número pseudorrandomico entre 0  e 1
+    valor = random()
+    if valor > 0.5:
+        return 'Cara'
+    return 'Coroa'
+
+print(jogar_moeda())
+
+# erros comuns na utilizacao do retorno, que, na verdade, nem é erro, mas sim codificação desnecessaria
+
+def eh_impar():
+    numero = 61
+    if numero % 2 != 0:
+        return True
+    return False
+
+print(eh_impar())
