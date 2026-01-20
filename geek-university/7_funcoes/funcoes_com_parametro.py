@@ -8,7 +8,16 @@ entrada -> processamento -> saida
 Se a gente pensar numa função,ja sabemos que temos funções que:
 - não possuem entrada
 - não possuem saida
-- possuem entrada, mas nãp possuem said
-- não possuem entrada m possuem saida
+- possuem entrada, mas nãp possuem saida
+- não possuem entrada m possuem saidaa
 - possuem entrada e saida
 """
+def quadrado(numero):
+    return numero ** 2
+
+print(quadrado(7))
+print(quadrado(2))
+print(quadrado(5))
+
+ret = quadrado(6)
+print(ret)
