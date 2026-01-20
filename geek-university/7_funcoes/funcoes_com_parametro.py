@@ -21,3 +21,31 @@ print(quadrado(5))
 
 ret = quadrado(6)
 print(ret)
+
+# Funções podem ter n parametros de entrada. ou seja,podemos receber como entrada
+# numa função qquantos parametros forem necessarios, eles são separados por vírgula
+
+# exemplos
+
+def soma(a,b):
+    return a+b
+
+def multiplicar(a,b):
+    return a*b
+
+def outra(num1,b, msg):
+    return (num1+b)*msg
+
+print(soma(3,4))
+print(soma(10,20))
+
+# se for informado um número errado de parametros ou argumetos, teremos TypeError
+
+# parametros nomeados
+
+def nome_completo(nome,sobrenome):
+    return f'seu nome completo eh {nome} {sobrenome}'
+
+
+print(nome_completo('angeline','jolie'))
+
