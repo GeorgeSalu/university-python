@@ -60,3 +60,10 @@ nome = 'felicity'
 sobrenome = 'jolie'
 print(nome_completo(nome,sobrenome))
 
+# argumentos nomeados (Keyword Arguments)
+
+# caso utilizemos nomes dos parametros nos argumentos para informá-los, podemos
+# utilizar qualquer ordem
+
+print(nome_completo(nome="angelina",sobrenome="jolie"))
+print(nome_completo(sobrenome="jolie",nome="angelina"))
