@@ -64,3 +64,7 @@ def cantar_parabens():
 
 
 cantar_parabens()
+
+# em python podemos inclusive criar variveis do tipo de uma função e executar esta função atraves da variavel
+canta = cantar_parabens
+canta()
