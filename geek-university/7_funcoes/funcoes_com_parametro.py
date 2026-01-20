@@ -52,7 +52,7 @@ print(nome_completo('angeline','jolie'))
 # a diferenca entre parametros e argumentos
 
 # parametros são variaveis declaradas na definição de uma função
-# argumentos são dados passados durante a exercução de uma função
+# argumentos são dados passados durante a execução de uma função
 
 # a ordem so parametros importa
 
