@@ -37,4 +37,30 @@ print(cores)
 cores.clear()
 print(cores)
 
-# print(help(print))
+# definindo a primeira função
+def diz_oi():
+    print('oi')
+
+
+"""
+obs: 
+1 - veja que, dentro das nossas funcções podemos utilizar outras funcções
+2 - veja que nossa função so executa 1 tarefa, ou seja a unica coisa que ela faz e dizer oi
+3 - veja que esta função não recebe parametro de entrada
+4 - veja que esta função não retorna nada
+"""
+
+# utilizando funções
+# chamada de execução
+diz_oi()
+
+# exemplo 2
+def cantar_parabens():
+    print('parabens para voce')
+    print('nesta data querida')
+    print('muitas felicidades')
+    print('muitos anos de vida')
+    print('viva o aniversariante')
+
+
+cantar_parabens()
