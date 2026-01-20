@@ -49,3 +49,14 @@ def nome_completo(nome,sobrenome):
 
 print(nome_completo('angeline','jolie'))
 
+# a diferenca entre parametros e argumentos
+
+# parametros são variaveis declaradas na definição de uma função
+# argumentos são dados passados durante a exercução de uma função
+
+# a ordem so parametros importa
+
+nome = 'felicity'
+sobrenome = 'jolie'
+print(nome_completo(nome,sobrenome))
+
