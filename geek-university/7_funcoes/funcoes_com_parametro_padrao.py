@@ -22,3 +22,15 @@ def teste(potencia, num=2):
 print(teste(6))
 
 # exemplos mas complexos
+def mostrar_informacao(nome='geek',instrutor=False):
+    if nome == 'geek' and instrutor:
+        return 'bem vindo instrutor geek'
+    elif nome == 'geek':
+        return 'eu pensei que voce era o instrutor'
+    return f'ola {nome}'
+
+print(mostrar_informacao())
+print(mostrar_informacao(instrutor=True))
+print(mostrar_informacao(True))
+print(mostrar_informacao('Ozzy'))
+print(mostrar_informacao(nome='stephany'))
