@@ -5,5 +5,5 @@ def dobro(numero: int) -> int:
     return numero * 2
 
 if __name__ == '__main__':
-    valor = 4
+    valor: int = 4
     print(f'o dobro de {valor} eh {dobro(valor)}')
