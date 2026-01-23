@@ -40,3 +40,24 @@ print(numeros_dobrados)
 
 # list comprehension
 print([numero * 2 for numero in numeros])
+
+# outros exemplos
+# 1
+
+nome = 'geek university'
+print([letra.upper() for letra in nome])
+
+# 2
+
+def caixa_alta(nome):
+    nome = nome.replace(nome[0],nome[0].upper())
+    return nome
+
+amigos = ['maria','julia','pedro','guilherme','vanessa']
+print([caixa_alta(amigo) for amigo in amigos])
+
+# 3
+print([numero * 3 for numero in range(1,10)])
+
+# 4
+print([bool(valor) for valor in [0, [], '',True, 1,3.2]])
