@@ -21,3 +21,16 @@ print(listas[2][1]) # 8
 for lista in listas:
     for num in lista:
         print(num)
+
+
+# list comprehension
+[[print(valor) for valor in lista] for lista in listas]
+
+# outros exemplos
+# gerando matrix 3x3
+tabuleiro = [[numero for numero in range(1,4)] for valor in range(1,4)]
+print(tabuleiro)
+
+# gerando jogadas para o jogo da velha
+velha = [['X' if numero % 2 == 0 else '0' for numero in range(1,4)] for valor in range(1,4)]
+print(velha)
