@@ -27,3 +27,16 @@ areas = map(area, raios)
 print(areas)
 print(type(areas))
 print(list(areas))
+
+# forma 3 - map com lambda
+print(list(map(lambda r: math.pi * (r ** 2), raios)))
+
+# obs: apos utilizar a função map() depois da primeira utilização do resultado ele é zerado
+
+# para fixar - map
+# temos dados iteraveis
+# dados: a1, a2, .... an
+# temos uma função:
+# função: f(x)
+# Utilizamos a função map(f, dados) onde map ira 'mapear' cada elemento dos dados e aplicar a função
+
