@@ -44,3 +44,18 @@ print(autores)
 
 autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
 print(autores)
+
+# função quadratica
+# f(x) = a * x ** 2 +b * x + c
+
+# definindo a função
+
+def geradora_funcao_quadratica(a,b,c):
+    """Retorna a funcao f(x) = a * x ** 2 +b * x + c"""
+    return lambda x: a * x ** 2 + b * x + c
+
+teste = geradora_funcao_quadratica(2,3,-5)
+
+print(teste(0))
+print(teste(1))
+print(teste(2))
