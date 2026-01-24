@@ -14,5 +14,14 @@ print(media)
 dados = [1.3,2.7,0.8,4.1,4.3,-0.1]
 
 # calculando a média dos dodos utilizando a função mean()
-media = statistics.median(dados)
-print(media)
+media = statistics.mean(dados)
+print(f'media = {media}')
+
+# obs: assim como a função map() a filter() recebe dois parametros, sendo
+# uma função e um iteravel
+
+res = filter(lambda x: x > media, dados)
+print(type(res))
+print(list(res))
+
+# obs: assim como na função map(), apos serem utilizados dos dados de filter() eles são excluidos da memória
