@@ -37,3 +37,10 @@ print(duas(5,7))
 print(tres(5,7,8))
 
 # obs: se passarmos mais argumentos do que parametros esperados teremos TypeError
+
+# exemplo 2
+autores = ['issac asimov','ray bradbury','robert heinlein','arthur clarke','frank herbet','orson scott','douglas adams','h. g. wells','leigh']
+print(autores)
+
+autores.sort(key=lambda sobrenome: sobrenome.split(' ')[-1].lower())
+print(autores)
