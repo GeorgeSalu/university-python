@@ -15,3 +15,7 @@ print(numeros)
 # desafio: faça uma alteração na estrutura acima para gerar um dicionario ao inves de set
 numeros = {x: x ** 2 for x in range(10)}
 print(numeros)
+
+# exemplo 3
+letras = {letra for letra in 'geek university'}
+print(letras)
