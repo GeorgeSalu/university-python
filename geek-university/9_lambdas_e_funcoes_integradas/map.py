@@ -40,3 +40,12 @@ print(list(map(lambda r: math.pi * (r ** 2), raios)))
 # função: f(x)
 # Utilizamos a função map(f, dados) onde map ira 'mapear' cada elemento dos dados e aplicar a função
 
+# exemplo 3
+cidades = [('berlim', 29),('cairo',36),('buenos aires', 19),('los angeles', 26),('tokio',27),('nova york',28),('londres', 22)]
+
+print(cidades)
+
+# f = 9/5 * c + 32
+# lambda
+c_para_f = lambda dado: (dado[0], (9/5) * dado[1] + 32)
+print(list(map(c_para_f, cidades)))
