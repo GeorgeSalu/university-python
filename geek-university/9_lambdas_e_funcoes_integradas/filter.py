@@ -43,5 +43,26 @@ res = filter(lambda pais: pais != '', paises)
 print(list(res))
 
 # a diferenca entre map() e filter() é:
-# map() -> recebe dois parametros, uma função e um iteravel e retorna um objeto mapeando a função para cada elemento do iteravel
-# filter() -> recebe dois parametros, uma função e iteravel e retorna um objeto filtrando apenas os elementos de acordo com a função
+# map() -> recebe dois parâmetros, uma função e um iterável e retorna um objeto mapeando a função para cada elemento do iterável
+# filter() -> recebe dois parâmetros, uma função e iterável e retorna um objeto filtrando apenas os elementos de acordo com a função
+
+# exemplos mais complexos
+usuarios = [
+    {"username": "samuel", "tweets": ["eu adoro bolos", "eu adoro pizzas"]},
+    {"username": "carla", "tweets": ["eu amo meu gato"]},
+    {"username": "jeff", "tweets": []},
+    {"username": "bobo123", "tweets": []},
+    {"username": "doggo", "tweets": ["eu gosto de cachorros", "vou sair hoje"]},
+    {"username": "gal", "tweets": []},
+]
+
+print(usuarios)
+# filtrar os usuarios que estão inativos no twitter
+
+# forma 1
+inativos = list(filter(lambda usuario: len(usuario["tweets"]) == 0, usuarios))
+print(inativos)
+
+# forma 2
+inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
+print(inativos)
