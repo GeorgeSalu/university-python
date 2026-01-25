@@ -66,3 +66,12 @@ print(inativos)
 # forma 2
 inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
 print(inativos)
+
+# combinando filter() e map()
+
+nomes = ['vanesa','ana','maria']
+
+# devemos criar uma lista contendo 'a sua instrutora é'+nome, desde que cada nome tenha menos de 5 caracteres
+
+lista = list(map(lambda nome: f'sua instrutora é {nome}', filter(lambda nome: len(nome) < 5, nomes)))
+print(lista)
