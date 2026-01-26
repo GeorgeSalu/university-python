@@ -21,3 +21,18 @@ numeros = [6,1,8,2]
 print(numeros)
 print(sorted(numeros, reverse=True)) # ordena do maior para o maior
 
+# podemos utilizar o sorted() para coisas mais complexas
+usuarios = [
+    {"username": "samuel", "tweets": ["eu adoro bolos", "eu adoro pizzas"]},
+    {"username": "carla", "tweets": ["eu amo meu gato"]},
+    {"username": "jeff", "tweets": []},
+    {"username": "bobo123", "tweets": [], "cor": "amarelo"},
+    {"username": "doggo", "tweets": ["eu gosto de cachorros", "vou sair hoje"]},
+    {"username": "gal", "tweets": [],"cor": "preto", "musica": "samba"},
+]
+print(usuarios)
+
+# ordenando por usuario
+print(sorted(usuarios, key=lambda usuario: usuario["username"]))
+
+
