@@ -32,3 +32,22 @@ reduce() irá retornar o resultado final
 alternativamente, poderíamos ver a função reduce() como:
 funcao(funcao(funcao(a1, a2), a3), a4), ...), an)
 """
+
+# como funciona na prática ?
+# vamos utilizar a função reduce() para multiplicar todos os números de uma lista
+from functools import reduce
+
+dados = [2,3,4,5,7,11,13,17,19,23,29]
+
+# pra utilizar o reduce() nos precisamos de uma função que receba dois parametros
+multi = lambda x, y: x * y
+
+res = reduce(multi, dados)
+print(res)
+
+# utilizando um loop normal
+res = 1
+for n in dados:
+    res = res * n
+
+print(res)
