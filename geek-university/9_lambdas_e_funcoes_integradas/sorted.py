@@ -35,4 +35,16 @@ print(usuarios)
 # ordenando por usuario
 print(sorted(usuarios, key=lambda usuario: usuario["username"]))
 
+# exemplo 2
+musicas = [
+    {"titulo": "thunderstructk", "tocou": 3},
+    {"titulo": "Dead skin mask", "tocou": 2},
+    {"titulo": "Back in black", "tocou": 4},
+    {"titulo": "too old to rock", "tocou": 32},
+]
 
+# ordenar da menos tocada para a mais tocada
+print(sorted(musicas, key=lambda music: music["tocou"]))
+
+# ordenar da mais tocada para a menos tocada
+print(sorted(musicas, key=lambda music: music["tocou"], reverse=True))
