@@ -11,6 +11,10 @@ abs() -> retorna o valor absoluto de um número inteiro ou real, de forma basica
 sum() -> recebe como parametro um iteravel, podendo receber um valor inicial, e retorna a soma total dos elementos, incluindo o valor inicial
 
 obs: o valor incial default = 0
+
+# Round
+round() -> retorna um número arredondado para n digitos de precisão após a casa decimal, se a precisão não for informada
+retorna o inteiro, mas proximo da entrada
 """
 # exemplo len()
 print(len('geek university'))
@@ -38,3 +42,10 @@ print(sum([1,2,3,4,5], 5))
 print(sum((1,2,3,4,5)))
 print(sum({1, 2, 3, 4, 5}))
 print(sum({'a':1,'b':2,'c':3}.values()))
+
+# exemplo round()
+print(round(10.2))
+print(round(10.5))
+print(round(10.6))
+print(round(1.212121, 2))
+print(round(1.2199999, 2))
