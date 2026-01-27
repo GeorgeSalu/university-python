@@ -62,3 +62,26 @@ musicas = [
 
 print(max(musicas, key=lambda musica: musica["tocou"]))
 print(min(musicas, key=lambda musica: musica["tocou"]))
+
+# imprima somente o título da musica mais e menos tocada
+print(max(musicas, key=lambda musica: musica["tocou"])["titulo"])
+print(min(musicas, key=lambda musica: musica["tocou"])['titulo'])
+
+# como encontrar a musica mais tocada e a menos tocada sem usar max() e min() e lambda ?
+max = 0
+for musica in musicas:
+    if musica["tocou"] > max:
+        max = musica["tocou"]
+
+for musica in musicas:
+    if musica["tocou"] == max:
+        print(musica["titulo"])
+
+min = 9999
+for musica in musicas:
+    if musica["tocou"] < min:
+        min = musica["tocou"]
+
+for musica in musicas:
+    if musica["tocou"] == min:
+        print(musica["titulo"])
