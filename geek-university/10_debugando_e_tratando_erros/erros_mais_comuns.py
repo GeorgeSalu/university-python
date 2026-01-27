@@ -19,9 +19,18 @@ c)
 
 2 - NameError -> Ocorre quando uma variavel ou função não foi definindo
 
-emplos NameError:
+exemplos NameError:
 a)
     print(geek)
 b)
     geek()
+
+3 - TypeError -> Ocorre quando uma função/operação/ação é aplicada a um tipo errdo
+
+exemplos TypeError:
+a)
+    print(len(5))
+
+b)
+    print('geek'+[])
 """
