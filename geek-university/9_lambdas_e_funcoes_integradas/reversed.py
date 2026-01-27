@@ -20,5 +20,22 @@ print(list(reversed(lista)))
 # tupla
 print(tuple(reversed(lista)))
 
-# conjunto
+# obs: em conjuntos não definimos a ordem dos elementos
+# conjunto (set)
 print(set(reversed(lista)))
+
+# podemos iterar sobre o reversed()
+for letra in reversed('geek university'):
+    print(letra, end='')
+
+print()
+# podemos fazer o mesmo sem o uso do for
+print(''.join(list(reversed('geek university'))))
+
+# já vimos como fazer isso, mas facil com o slice de strings
+print('geek university'[::-1])
+
+# podemos também utilizar o reversed() para fazer um loop for reverso
+for n in reversed(range(0, 10)):
+    print(n)
+    
