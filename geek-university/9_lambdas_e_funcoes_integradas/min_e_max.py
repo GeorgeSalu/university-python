@@ -18,3 +18,7 @@ print(max(dicionario))
 
 dicionario = {'a':1, 'b':2, 'c':3}
 print(max(dicionario.values()))
+
+print(max(4,67,54))
+print(max('a','ab','abc'))
+print(max('a','b','c','d'))
