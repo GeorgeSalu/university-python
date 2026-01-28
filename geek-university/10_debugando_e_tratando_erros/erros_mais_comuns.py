@@ -33,4 +33,26 @@ a)
 
 b)
     print('geek'+[])
+
+4 - IndexError -> ocorre quando tentamos acessar um elemento em uma lista ou outro tipo de dado indexado utilizando
+um indice invalido
+
+exemplos IndexError:
+
+a)
+    lista = ['geek']
+    print(lista[2])
+b)
+    lista = ['geek']
+    print(lista[0][10])
+c)
+    tupla = ('geek')
+    print(tupla[0][10])
+
+5 - ValueError -> ocorre quando uma função/operação built-in (integrada) recebe um argumento com tipo correto, mas valor inapropriado
+
+exemplos ValueError:
+a)
+    print(int('geek'))
+
 """
