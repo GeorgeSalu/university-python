@@ -14,6 +14,16 @@ except
 # exemplo 1 - tratando um erro generico
 
 try:
-    geek()
+    len(5)
 except:
     print('Ocorreu um erro')
+
+# tratar erro de forma generia não é a melhor forma de tratamento de erros, o ideal e sempre
+# tratar de forma específica
+
+# exemplo 2 - tratando um erro especifico
+
+try:
+    len(5)
+except TypeError:
+    print('voce esta utilizando uma função inexistente')
