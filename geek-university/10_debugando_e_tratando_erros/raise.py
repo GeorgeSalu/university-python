@@ -10,4 +10,12 @@ de error.
 A forma geral de utilização é:
 raise TipoDoErro('mensagem de erro')
 """
-raise ValueError('valor incorreto')
+# exemplo real
+def colore(texto, cor):
+    if type(texto) is not str:
+        raise TypeError('texto precisa ser uma string')
+    if type(cor) is not str:
+        raise TypeError('cor precisa ser uma string')
+    print(f'o texto {texto} sera impresso na cor {cor}')
+
+colore('geek',4)
