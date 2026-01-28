@@ -55,4 +55,28 @@ exemplos ValueError:
 a)
     print(int('geek'))
 
+6 - KeyError -> ocorre quando tentamos acessar um dicionario com uma chave que não existe
+
+exemplos KeyError:
+
+a)
+    dic = {'python':'university'}
+    print(dic['geek'])
+
+7 - AttributeError -> Ocorre quando uma variavel não tem um atributo/função
+
+exemplos AttributeError:
+a)
+    tupla = (1, 2, 3)
+    print(tupla.sort())
+
+8 -> IndenttionError -> Ocorre quando não respeitamos a indentação do python
+
+exemplos IndenttionError:
+a)
+def nova():
+print('geek')
+
+obs: Exceptions e Erros são sinonimos na programação
+obs: Importante ler e prestar atenção na saida de erro
 """
