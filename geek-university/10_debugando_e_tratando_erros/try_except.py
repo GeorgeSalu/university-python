@@ -37,7 +37,7 @@ except TypeError as err:
     print(f'a aplicação gerou o seguinte erro: {err}')
 
 
-# pdemos efetuar diversos tratamentos de erros de uma vez
+# podemos efetuar diversos tratamentos de erros de uma vez
 
 try:
     len(5)
