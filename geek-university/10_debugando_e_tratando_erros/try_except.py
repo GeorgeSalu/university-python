@@ -27,3 +27,23 @@ try:
     len(5)
 except TypeError:
     print('voce esta utilizando uma função inexistente')
+
+
+# exemplo 4 - tratando erro especifico com detalhes do erro
+
+try:
+    len(5)
+except TypeError as err:
+    print(f'a aplicação gerou o seguinte erro: {err}')
+
+
+# pdemos efetuar diversos tratamentos de erros de uma vez
+
+try:
+    len(5)
+except NameError as erra:
+    print(f'deu NameError: {erra}')
+except TypeError as errb:
+    print(f'deu TypeError: {errb}')
+except:
+    print('Ocorreu um erro')
