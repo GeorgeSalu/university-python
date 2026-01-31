@@ -52,4 +52,14 @@ for i in range(6):
 from random import choice
 
 jogadas = ['pedra', 'papel', 'tesoura']
+
+# choice pega um da lista aleatoriamente
 print(choice(jogadas))
+
+# shuffle() -> tem a função de embaralhar dados
+from random import shuffle
+
+cartas = ['k','q','j','a','2','3','4','5','6','7','8','9']
+
+shuffle(cartas)
+print(cartas)
