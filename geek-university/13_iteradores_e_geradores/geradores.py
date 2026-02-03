@@ -18,3 +18,25 @@ Generator Functions
     -> podem utilizar yield multiplas vezes
     -> quando executada, retorn um generator
 """
+# exemplo função geradora (generator function)
+
+def conta_ate(valor_maximo):
+    contador = 1
+    while contador <= valor_maximo:
+        yield contador
+        contador = contador + 1
+
+# Obs: um generator function não é um generator. ela gera um generator
+
+gen = conta_ate(5)
+# print(type(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
+
+gen2 = conta_ate(10)
+for num in gen2:
+    print(num)
