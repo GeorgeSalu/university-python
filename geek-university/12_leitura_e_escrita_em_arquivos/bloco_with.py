@@ -13,6 +13,6 @@ são fechados após o bloco with
 arquivo = open('texto.txt')
 """
 
-with open('texto.txt', 'w') as arquivo:
+with open('texto.txt') as arquivo:
     print(arquivo.readlines())
     print(arquivo.closed)
