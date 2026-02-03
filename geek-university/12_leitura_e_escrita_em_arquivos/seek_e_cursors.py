@@ -13,3 +13,6 @@ print(arquivo.read())
 arquivo.seek(0)
 
 print(arquivo.read())
+
+# readline() -> função que le o arquivo linha a linha
+print(arquivo.readline())
