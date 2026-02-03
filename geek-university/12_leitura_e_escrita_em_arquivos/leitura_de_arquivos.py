@@ -25,4 +25,6 @@ arquivo = open('texto.txt')
 print(arquivo.read())
 
 # obs: o python, utiliza um recurso para trabalhar com arquivo chamado cursor. Esse cursor,
-# funciona como o cursor quando estamos escrevendo 
+# funciona como o cursor quando estamos escrevendo
+
+# obs: a função read() le todo o conteudo do arquivo
