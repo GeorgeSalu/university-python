@@ -8,5 +8,18 @@ Iterator ->
 Iterable ->
     - Um objeto que irá retornar um iterator qunado a função iter() for chamada
 """
-nome = 'geek'
+nome = 'geek' # é um iterable, mas nõ é um iterator
 numeros = [1,2,3,4,5,6]
+
+it1 = iter(nome)
+it2 = iter(numeros)
+
+print(next(it1))
+print(next(it1))
+print(next(it1))
+print(next(it1))
+
+print(next(it2))
+print(next(it2))
+print(next(it2))
+print(next(it2))
