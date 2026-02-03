@@ -8,4 +8,4 @@ with open(arquivo, 'r') as arq:
     linhas = arq.readlines()
 
 
-print(f'Existe {len(linhas)} linhas do arquivo')
+print(f'Existe(m) {len(linhas)} linhas do arquivo')
