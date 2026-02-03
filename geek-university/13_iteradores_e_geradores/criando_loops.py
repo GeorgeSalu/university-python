@@ -11,3 +11,17 @@ for letra in 'abc':
 iter([1,2,3,4,5,6])
 iter(['abc'])
 
+# exemplo 2
+def meu_for(interavel):
+    ir = iter(interavel)
+    while True:
+        try:
+            print(next(ir))
+        except StopIteration:
+            break
+
+
+meu_for('geek university')
+
+numeros = [1,2,3,4,5,6]
+meu_for(numeros)
