@@ -26,7 +26,7 @@ def conta_ate(valor_maximo):
         yield contador
         contador = contador + 1
 
-# Obs: um generator function não é um generator. ela gera um generator
+# Obs: um generator function não é um generator. Ela gera um generator
 
 gen = conta_ate(5)
 # print(type(gen))
