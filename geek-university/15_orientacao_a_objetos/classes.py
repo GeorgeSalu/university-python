@@ -16,10 +16,22 @@ Classes podem conter:
     realizar no seu sistema. No caso da lampada. Por exemplo, um comportamento comum que muito provavelmente
     iriamos querer representar no nosso sistema é o do ligar e desligar
 
+Em Python, para definir uma classe utilizamos a palavra reservada class.
+
+obs: utilizamos a palavra pass em python quando temos um bloco de codigo que ainda não está implementado
+
+obs: quando nomeamos as nossas classes em python utilizamos por convênçõ o nome com inicial em maiusculo.
+se o nome for composto, utuliza-se as iniciais de ambas as palavras em maiusculo, todas juntas
+
+obs geek: em computação não utilizamos: acentuação, caracteres especiais, espaços oi similares para nomes
+de classes, atributos, metodos, arquivos, diretorios e etc
+
 """
 class Lampada:
     pass
 
+class ContaCorrente:
+    pass
 
 lamp = Lampada()
 print(type(lamp))
