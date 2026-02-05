@@ -51,9 +51,25 @@ class Acesso:
         self.email = email
         self.__senha = senha
 
+    def mostrar_senha(self):
+        print(self.__senha)
+
+    def mostrar_email(self):
+        print(self.email)
+
 # obs: lembre-se que isso é apenas uma convenção, ou seja,a linguagem python não
 # vai impedir que façamos acesso aos atributos sinalizados como privados fora da classe
 
 # exemplo
 
 user = Acesso('teste@gmail.com', '12323')
+print(user.email)
+# print(user.__senha) AttributeError
+#print(user._Acesso__senha) # temos acesso, mas não deveriamos fazer esse acesso (Name Mangling)
+user.mostrar_senha()
+user.mostrar_email()
+
+# o que significa atributos de instancias ?
+
+# significa que ao criarmos instancias/objetos de uma classe, todas as instâncias teram estes
+# atributos
