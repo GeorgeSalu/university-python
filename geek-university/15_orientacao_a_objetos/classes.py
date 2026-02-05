@@ -26,6 +26,8 @@ se o nome for composto, utuliza-se as iniciais de ambas as palavras em maiusculo
 obs geek: em computação não utilizamos: acentuação, caracteres especiais, espaços oi similares para nomes
 de classes, atributos, metodos, arquivos, diretorios e etc
 
+obs: quando estamos planejando um software e definimos quais classe teremos que ter no sistema, chamamos
+estes objetos que serão mapeados para classes de entidade
 """
 class Lampada:
     pass
