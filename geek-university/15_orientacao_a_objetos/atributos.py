@@ -11,6 +11,12 @@ Em python, dividimos os atributos em 3 grupos:
 
 # atributos de instância: são atributos declarados dentro do metodo construtor
 # obs: metodo contrutor: é um metodo especial utilizado para construção do objeto
+
+em python, por conveção, ficou estabelecido que, todo atributo de uma classe é publico
+ou seja, pode er acessado em todo o projeto
+caso queiramos demostrar que determinado atributo deve ser tratado como provado, ou seja
+que deve ser acessado/utilizado somente dentro da propria classe onde está declarado, utiliza-se
+__ duplo underscore no inicio de seu nome, isso é conhecido também como Name Mangling
 """
 class Lampada:
     def __init__(self, voltagem, cor):
@@ -38,3 +44,16 @@ class Usuario:
         self.nome = nome
         self.email = email
         self.senha = senha
+
+# atributos publicos e atributos privados
+class Acesso:
+    def __init__(self, email, senha):
+        self.email = email
+        self.__senha = senha
+
+# obs: lembre-se que isso é apenas uma convenção, ou seja,a linguagem python não
+# vai impedir que façamos acesso aos atributos sinalizados como privados fora da classe
+
+# exemplo
+
+user = Acesso('teste@gmail.com', '12323')
