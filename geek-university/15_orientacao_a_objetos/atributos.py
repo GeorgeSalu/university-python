@@ -71,5 +71,21 @@ user.mostrar_email()
 
 # o que significa atributos de instancias ?
 
-# significa que ao criarmos instancias/objetos de uma classe, todas as instâncias teram estes
+# significa que ao criarmos instancias/objetos de uma classe, todas as instâncias term estes
 # atributos
+
+user1 = Acesso('aluno@gmail.com','1234')
+user2 = Acesso('aluno2@gmail.com','1234')
+
+user1.mostrar_email()
+user2.mostrar_email()
+
+# Atributos de classe
+p1 = Produto('PlayStattion 4','video game', 2500)
+p1 = Produto('xbox S','video game', 4500)
+
+# Atributos de classes, são atributos, clarro, que são declarados diretamente na classe, ou seja,
+# fora do construtor. Geralmente já inicializamos um valor, e este valor é compartilhado entre
+# todas as instâncias da classe, Ou seja, ao inves de instâncias da classe ter os seus próprios valores
+# como é o caso dos atributos de instâncias, com os atributos de classe todas as instâncias teram o
+# mesmo valor para este atributo
