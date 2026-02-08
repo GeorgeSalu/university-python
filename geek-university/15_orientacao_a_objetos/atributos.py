@@ -89,3 +89,21 @@ p1 = Produto('xbox S','video game', 4500)
 # todas as instâncias da classe, Ou seja, ao inves de instâncias da classe ter os seus próprios valores
 # como é o caso dos atributos de instâncias, com os atributos de classe todas as instâncias teram o
 # mesmo valor para este atributo
+
+class Produto2:
+
+    # atributo de classe
+    imposto = 1.05 # 0.5% de imposto
+
+    def __init__(self, nome, descricao, valor):
+        self.nome = nome
+        self.descricao = descricao
+        self.valor = (valor * Produto2.imposto)
+
+p1 = Produto2('PlayStattion 4','video game', 2500)
+p2 = Produto2('xbox S','video game', 4500)
+
+print(p1.imposto)
+print(p2.imposto)
+
+# obs: não precisamos criar uma instância de uma classe para fazer acesso a um atributo de classe
