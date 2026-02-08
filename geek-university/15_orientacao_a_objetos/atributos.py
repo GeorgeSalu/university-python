@@ -94,11 +94,14 @@ class Produto2:
 
     # atributo de classe
     imposto = 1.05 # 0.5% de imposto
+    contador = 0
 
     def __init__(self, nome, descricao, valor):
+        self.id = Produto2.contador + 1
         self.nome = nome
         self.descricao = descricao
         self.valor = (valor * Produto2.imposto)
+        Produto2.contador = self.id
 
 p1 = Produto2('PlayStattion 4','video game', 2500)
 p2 = Produto2('xbox S','video game', 4500)
@@ -107,3 +110,32 @@ print(p1.imposto)
 print(p2.imposto)
 
 # obs: não precisamos criar uma instância de uma classe para fazer acesso a um atributo de classe
+
+print(Produto2.imposto) # acesso correto de um atributo de classe
+
+print(p1.id)
+print(p2.id)
+
+# obs: em linguagens como o java, os atributos conhecidos como atributos de classe aqui em python
+# são chamados atributos estáticos
+
+# Atributos dinamicos -> Um atributo de instância pode ser criado em tempo de execução
+
+# obs: o atributo dinamico será exclusivo da instancia que o criou
+
+p1 = Produto('PlayStattion 4','video game', 2500)
+p2 = Produto('xbox S','video game', 4500)
+
+# criando um atributo dinamico em tempo de execução
+
+p2.peso = '5kg'
+print(f'Produto: {p2.nome}: Descricao: {p2.descricao} Valor: {p2.valor}, Peso: {p2.peso}')
+
+# deletando atributos
+print(p1.__dict__)
+print(p2.__dict__)
+
+del p2.peso
+
+print(p1.__dict__)
+print(p2.__dict__)
