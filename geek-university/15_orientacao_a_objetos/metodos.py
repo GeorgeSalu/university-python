@@ -15,6 +15,8 @@ obs: os metodos/funções dunder em python são chamados de metodos magicos
 ATENÇÃO! por mais que possamos criar nossas proprias funções utilizando dunder (underline
 no inicio e no fim) não é aconselhado. python possui varios metodos com esta forma de nomeclatura
 e pode ser que mudemos o comportamento dessas funções magicas da linguagem, então evite ao maximo
+
+# metodos são escritos em letras minusculas, se o metodo for composto, o nome terá as palavras separadas por underline
 """
 # metodos de instância
 class Lampada:
@@ -53,8 +55,21 @@ class Produto:
 
 
 class Usuario:
-    def __init__(self, nome, email, senha):
+    def __init__(self, nome, sobrenome, email, senha):
         self.nome = nome
+        self.sobrenome = sobrenome
         self.email = email
         self.senha = senha
 
+    def nome_completo(self):
+        return f'{self.nome} {self.sobrenome}'
+
+p1 = Produto('Playstation 4', 'video game', 5000)
+print(p1.desconto(20))
+
+
+user1 = Usuario('angelina', 'jolie', 'angelie@gmail.com', '122121')
+user2 = Usuario('felicity', 'jones','felicity@gmail.com', '2345677')
+
+print(user1.nome_completo())
+print(user2.nome_completo())
