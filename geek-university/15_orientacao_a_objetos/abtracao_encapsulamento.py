@@ -30,9 +30,6 @@ instancia._Pessoa_falar()
 Abstração, em POO, é o ato de expor apenas dados relevantes de uma classe, escondendo atributos e metodos
 privados de usuario
 """
-from enum import show_flag_values
-
-
 class Conta:
 
     contador = 400
