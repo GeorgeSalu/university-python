@@ -12,12 +12,21 @@ class Lampada:
         self.__luminosidade = luminosidade
         self.__ligada = False
 
+    def checa_lampada(self):
+        return self.__ligada
+
+    def ligar_desligar(self):
+        if self.__ligada:
+            self.__ligada = False
+        else:
+            self.__ligada = True
+
 
 class ContaCorrente:
 
     contador = 1234
 
-    def __init__(self, numero, limite, saldo):
+    def __init__(self, limite, saldo):
         self.__numero = ContaCorrente.contador + 1
         self.__limite = limite
         self.__saldo = saldo
@@ -34,6 +43,9 @@ class Usuario:
 
 # instancia/objetos
 lamp1 = Lampada('branca',110, 60)
+lamp1.ligar_desligar()
+print(f'A lampada esta ligada ? {lamp1.checa_lampada()}')
+
 cc1 = ContaCorrente(5000, 2000)
 user1 = Usuario('felicity','jones','felicity@gmail.com','1234555')
 
