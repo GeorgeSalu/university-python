@@ -22,3 +22,18 @@ class ContaCorrente:
         self.__limite = limite
         self.__saldo = saldo
         ContaCorrente.contador = self.__numero
+
+
+class Usuario:
+    def __init__(self, nome, sobrenome, email, senha):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.email = email
+        self.senha = senha
+
+
+# instancia/objetos
+lamp1 = Lampada('branca',110, 60)
+cc1 = ContaCorrente(5000, 2000)
+user1 = Usuario('felicity','jones','felicity@gmail.com','1234555')
+
