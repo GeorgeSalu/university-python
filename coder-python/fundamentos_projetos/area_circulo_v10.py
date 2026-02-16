@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from math import pi
 import sys
 
