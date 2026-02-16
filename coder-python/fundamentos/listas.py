@@ -24,3 +24,17 @@ print(lista[0])
 print(lista[0])
 print(lista[-1])
 print(lista[-5])
+
+
+lista2 = ['Ana', 'Lia', 'Rui', 'Paulo', 'Dani']
+print(lista2[1:3])
+print(lista2[1:-1])
+print(lista2[1:])
+print(lista2[:-1])
+print(lista2[:])
+print(lista2[::2])
+print(lista2[::-1])
+del lista2[2]
+print(lista2)
+del lista2[1:]
+print(lista2)
