@@ -1,7 +1,7 @@
 def faixa_etaria(idade):
     if 0 <= idade < 18:
         return "menor de idade"
-    elif idade in range(18, 64):
+    elif idade in range(18, 65):
         return "adulto"
     elif idade in range(65, 100):
         return "melhor de idade"
