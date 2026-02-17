@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 # conceito          nota
 # A                 de 10.0 a 9.1
 # A-                de 9.0 a 8.1
