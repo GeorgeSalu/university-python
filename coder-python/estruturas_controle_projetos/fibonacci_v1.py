@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 
 # 0,1,1,2,3,5,8,13,21
 def fibonacci():
@@ -10,3 +11,5 @@ def fibonacci():
         penultimo = ultimo
         ultimo = proximo
 
+if __name__ == '__main__':
+    fibonacci()
