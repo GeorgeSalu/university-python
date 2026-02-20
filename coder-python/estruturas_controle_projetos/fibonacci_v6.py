@@ -11,6 +11,6 @@ def fibonacci(quantidade):
 
 
 if __name__ == '__main__':
-    # lista os 20 primeiro numeros da sequência
+    # listar os 20 primeiro números da sequência
     for fib in fibonacci(20):
         print(fib)
