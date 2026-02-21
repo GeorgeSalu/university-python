@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 arquivo = open('pessoas.csv')
 dados = arquivo.read()
 arquivo.close()
