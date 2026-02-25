@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 def tag_bloco(text0, classe='success',inline=False):
     tag = 'span' if inline else 'div'
     return f'<{tag} class="{classe}">{text0}</{tag}>'
