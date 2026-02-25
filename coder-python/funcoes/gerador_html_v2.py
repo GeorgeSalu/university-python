@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
-def tag_bloco(text0, classe='success',inline=False):
+def tag_bloco(texto, classe='success',inline=False):
     tag = 'span' if inline else 'div'
-    return f'<{tag} class="{classe}">{text0}</{tag}>'
+    return f'<{tag} class="{classe}">{texto}</{tag}>'
 
 
 if __name__ == '__main__':

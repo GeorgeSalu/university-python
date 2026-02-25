@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
-def tag_bloco(text0, classe='success'):
-    return f'<div class="{classe}">{text0}</div>'
+def tag_bloco(texto, classe='success'):
+    return f'<div class="{classe}">{texto}</div>'
 
 
 if __name__ == '__main__':
