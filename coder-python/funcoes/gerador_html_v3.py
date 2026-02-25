@@ -12,5 +12,6 @@ if __name__ == '__main__':
     print(tag_bloco('bloco'))
     print(tag_bloco('inline e classe', 'info',True))
     print(tag_bloco('inline', inline=True))
+    print(tag_bloco(inline=True, conteudo='inline'))
     print(tag_bloco('falhou', classe='error'))
     print(tag_bloco(tag_lista('item 1','item 2'), classe='info'))
