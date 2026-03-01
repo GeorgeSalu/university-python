@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 def calc_preco_final(preco_bruto,calc_imposto, **params):
     return preco_bruto + preco_bruto * calc_imposto(**params)
 
