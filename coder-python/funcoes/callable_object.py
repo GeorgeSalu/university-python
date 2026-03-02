@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 class Potencia:
     # calcula potencia especifica
     def __init__(self, expoente):
@@ -13,3 +14,5 @@ if __name__ == '__main__':
 
     if callable(quadrado) and callable(cubo):
         print(f'3 ao quadrado => {quadrado(3)}')
+        print(f'5 ao cubo => {cubo(3)}')
+        print(Potencia(4)(2))
