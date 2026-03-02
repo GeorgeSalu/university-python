@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 def fibonacci(sequencia=None):
     sequencia = sequencia or [0,1]
     sequencia.append(sequencia[-1] + sequencia[-2])

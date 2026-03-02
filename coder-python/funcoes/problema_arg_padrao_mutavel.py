@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 def fibonacci(sequencia=[0,1]):
     # uso de mutavies como valor default (armadilha)
     sequencia.append(sequencia[-1] + sequencia[-2])
