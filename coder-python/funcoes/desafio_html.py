@@ -1,4 +1,9 @@
 #!/usr/local/bin/python3
+"""
+retorno esperado
+<p class="alert"><span >Curso de Python 3, por </span><strong id="jf">Juracy Filho</strong><span > e </span><strong id=
+"ll">Leonardo Leitão</strong><span >.</span></p>
+"""
 def tag(tag, *args, **kwargs):
     pass
 
@@ -16,8 +21,3 @@ if __name__ == '__main__':
     )
 
 
-"""
-retorno esperado
-<p class="alert"><span >Curso de Python 3, por </span><strong id="jf">Juracy Filho</strong><span > e </span><strong id=
-"ll">Leonardo Leitão</strong><span >.</span></p>
-"""
