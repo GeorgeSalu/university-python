@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 class Carro:
     def __init__(self, velocidade_maxima):
         self.velocidade_maxima = velocidade_maxima

@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 class Data:
     def __str__(self):
         return f'{self.dia}/{self.mes}/{self.ano}'
