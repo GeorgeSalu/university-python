@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from pacote1 import modulo1
 from pacote2 import modulo1 as modulo1_sub
 

@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from pacote1 import modulo1
 
 print(type(modulo1))

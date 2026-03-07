@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from pacote1.modulo1 import soma
 from pacote2.modulo1 import subtracao as sub
 
