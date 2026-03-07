@@ -19,6 +19,7 @@ def main():
     casa.append(Tarefa('passar roupa'))
     casa.append(Tarefa('lavar pratos'))
 
+    # desafio -> 'lavar pratos'
     [tarefa.concluir() for tarefa in casa if tarefa.descricao == 'lavar pratos']
     for tarefa in casa:
         print(f'- {tarefa}')
