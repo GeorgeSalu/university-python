@@ -1,7 +1,6 @@
 #!/usr/local/bin/python3
 from datetime import datetime
 
-
 class Projeto:
     def __init__(self, nome):
         self.nome = nome
