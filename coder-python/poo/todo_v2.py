@@ -13,7 +13,7 @@ class Projeto:
         return [tarefa for tarefa in self.tarefas if not tarefa.feito]
 
     def procurar(self, descricao):
-        # possivel indexError
+        # possivel IndexError
         return [tarefa for tarefa in self.tarefas if tarefa.descricao == descricao][0]
 
     def __str__(self):
