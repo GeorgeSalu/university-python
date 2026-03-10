@@ -9,6 +9,9 @@ class Projeto:
     def __iter__(self):
         return self.tarefas.__iter__()
 
+    # sobrecarga do operador +=
+    # projeto += tarefa
+    # casa += ...
     def __iadd__(self, tarefa):
         tarefa.dono = self
         self._add_tarefa(tarefa)
