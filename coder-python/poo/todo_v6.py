@@ -9,22 +9,15 @@ class Projeto:
     def __iter__(self):
         return self.tarefas.__iter__()
 
-    # sobrecarga do operador +=
-    # projeto += tarefa
-    # casa += ...
-    def __iadd__(self, tarefa):
-        tarefa.dono = self
-        self._add_tarefa(tarefa)
-        return self
-
     def _add_tarefa(self, tarefa, **kwargs):
         self.tarefas.append(tarefa)
 
     def _add_nova_tarefa(self, descricao, **kwargs):
-        self.tarefas.append(Tarefa(descricao,kwargs.get('vencimento', None)))
+        self.tarefas.append(Tarefa(descricao, kwargs.get('vencimento', None)))
 
     def add(self, tarefa, vencimento=None, **kwargs):
-        funcao_escolhida = self._add_tarefa if isinstance(tarefa, Tarefa) else self._add_nova_tarefa
+        funcao_escolhida = self._add_tarefa if isinstance(tarefa, Tarefa) \
+            else self._add_nova_tarefa
         kwargs['vencimento'] = vencimento
         funcao_escolhida(tarefa, **kwargs)
 
@@ -65,25 +58,22 @@ class Tarefa:
 
 
 class TarefaRecorrente(Tarefa):
-    def __init__(self, descricao, vencimento,dias = 7):
+    def __init__(self, descricao, vencimento, dias=7):
         super().__init__(descricao, vencimento)
         self.dias = dias
-        self.dono = None
 
     def concluir(self):
         super().concluir()
         novo_vencimento = datetime.now() + timedelta(days=self.dias)
-        nova_tarefa = TarefaRecorrente(self.descricao, novo_vencimento, self.dias)
-        if self.dono:
-            self.dono += nova_tarefa
-        return nova_tarefa
+        return TarefaRecorrente(self.descricao, novo_vencimento, self.dias)
+
 
 def main():
     casa = Projeto('Tarefas de Casa')
     casa.add('Passar roupa', datetime.now())
     casa.add('Lavar prato')
-    casa += (TarefaRecorrente('Trocar Lencois', datetime.now(), 7))
-    casa.add(casa.procurar('Trocar Lencois').concluir())
+    casa.add(TarefaRecorrente('Trocar lençóis', datetime.now(), 7))
+    casa.add(casa.procurar('Trocar lençóis').concluir())
     print(casa)
 
     casa.procurar('Lavar prato').concluir()
