@@ -10,11 +10,13 @@ class Humano:
         self.especie = 'Homo Neanderthalensis'
         return self
 
+    # metodo estatico
     @staticmethod
     def especies():
         adjetivos = ('Habilis', 'Erectus','Neanderthalensis', 'Sapiens')
         return ('Australopiteco',) + tuple(f'Homo {adj}' for adj in adjetivos)
 
+    # metodo de clsse
     @classmethod
     def is_evolido(cls):
         return cls.especie == cls.especies()[-1]
