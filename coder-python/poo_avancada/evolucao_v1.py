@@ -7,13 +7,13 @@ class Humano:
         self.nome = nome
 
     def das_cavernas(self):
-        self.especie = 'Homo Neanderthal'
+        self.especie = 'Homo Neanderthalensis'
+        return self
 
 if __name__ == '__main__':
     jose = Humano('jose')
-    grokn = Humano('grokn')
-    grokn.das_cavernas()
+    grokn = Humano('grokn').das_cavernas()
 
     print(f'Humano.especie: {Humano.especie}')
-    print(f'jose.nome: {jose.especie}')
-    print(f'grokn.nome: {grokn.especie}')
+    print(f'jose.especie: {jose.especie}')
+    print(f'grokn.especie: {grokn.especie}')
