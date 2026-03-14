@@ -16,7 +16,7 @@ class Humano:
         adjetivos = ('Habilis', 'Erectus','Neanderthalensis', 'Sapiens')
         return ('Australopiteco',) + tuple(f'Homo {adj}' for adj in adjetivos)
 
-    # metodo de clsse
+    # metodo de classe
     @classmethod
     def is_evolido(cls):
         return cls.especie == cls.especies()[-1]
