@@ -22,7 +22,7 @@ class Humano:
         return cls.especie == cls.especies()[-1]
 
 
-class Neanderthal(Humano):
+class Neandertal(Humano):
     especie = Humano.especies()[-2]
 
 class HomoSapiens(Humano):
@@ -31,9 +31,9 @@ class HomoSapiens(Humano):
 
 if __name__ == '__main__':
     jose = HomoSapiens('jose')
-    grokn = Neanderthal('grokn')
+    grokn = Neandertal('grokn')
     print(f'Evolucao (a partir da classe): {", ".join(HomoSapiens.especies())}')
     print(f'Homo sapiens evoluido ? {HomoSapiens.is_evolido()}')
-    print(f'Neanderthal evoluido ? {Neanderthal.is_evolido()}')
+    print(f'Neanderthal evoluido ? {Neandertal.is_evolido()}')
     print(f'Jose evoluido ? {jose.is_evolido()}')
     print(f'Grok evoluido ? {grokn.is_evolido()}')
