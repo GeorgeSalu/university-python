@@ -9,7 +9,7 @@ class Humano:
 
     @property
     def inteligente(self):
-        raise NotImplementedError('propridade não implementado')
+        raise NotImplementedError('propriedade não implementada')
 
     @property
     def idade(self):
