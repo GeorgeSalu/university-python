@@ -32,7 +32,7 @@ class Humano:
         return cls.especie == cls.especies()[-1]
 
 
-class Neanderthal(Humano):
+class Neandertal(Humano):
     especie = Humano.especies()[-2]
 
 class HomoSapiens(Humano):
