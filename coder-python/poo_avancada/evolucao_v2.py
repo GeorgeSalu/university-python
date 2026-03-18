@@ -34,6 +34,6 @@ if __name__ == '__main__':
     grokn = Neandertal('grokn')
     print(f'Evolucao (a partir da classe): {", ".join(HomoSapiens.especies())}')
     print(f'Homo sapiens evoluido ? {HomoSapiens.is_evolido()}')
-    print(f'Neanderthal evoluido ? {Neandertal.is_evolido()}')
+    print(f'Neandertal evoluido ? {Neandertal.is_evolido()}')
     print(f'Jose evoluido ? {jose.is_evolido()}')
     print(f'Grok evoluido ? {grokn.is_evolido()}')
