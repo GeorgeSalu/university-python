@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 class HtmlToStringMixin:
     def __str__(self):
         # conversao para html
