@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 def multiplicar(x):
-    def calcular(x):
+    def calcular(y):
         return x * y
     return calcular
 
