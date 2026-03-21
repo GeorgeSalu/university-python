@@ -1,5 +1,4 @@
-from poo.loja import compra
-
+#!/usr/local/bin/python3
 compras = (
     { 'quantidade': 2, 'preco': 10 },
     { 'quantidade': 3, 'preco': 20 },
