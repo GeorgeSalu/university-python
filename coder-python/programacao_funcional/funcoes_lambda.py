@@ -12,5 +12,5 @@ totais = tuple(
     )
 )
 
-print('precos totais: ', totais)
+print('preços totais: ', totais)
 print('total geral: ', sum(totais))

@@ -10,5 +10,5 @@ def calc_preco_total(compra):
 
 totais = tuple(map(calc_preco_total, compras))
 
-print('precos totais: ', totais)
+print('preços totais: ', totais)
 print('total geral: ', sum(totais))
