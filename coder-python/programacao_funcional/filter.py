@@ -10,3 +10,5 @@ pessoas = [
 
 menores = filter(lambda p: p['idade'] < 18, pessoas)
 print(list(menores))
+
+# desafio: retornar apenas as pessoas que tem nome maior que 6 caracteres
