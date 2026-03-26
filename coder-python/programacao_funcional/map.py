@@ -14,3 +14,5 @@ print(list(so_nomes))
 
 so_idade = map(lambda p: p['idade'], lista_2)
 print(list(so_idade))
+
+# desafio: usando map retorne frases '<Nome> tem <Idade> anos.'
