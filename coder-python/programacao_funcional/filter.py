@@ -1,7 +1,11 @@
+#!/usr/local/bin/python3
 pessoas = [
-    {'nome': 'joao', 'idade': 31},
-    {'nome': 'maria', 'idade': 37},
-    {'nome': 'jose', 'idade': 41},
+    {'nome': 'pedro', 'idade': 11},
+    {'nome': 'mariana', 'idade': 18},
+    {'nome': 'arthur', 'idade': 26},
+    {'nome': 'rebeca', 'idade': 6},
+    {'nome': 'thiago', 'idade': 19},
+    {'nome': 'gabriela', 'idade': 17},
 ]
 
 menores = filter(lambda p: p['idade'] < 18, pessoas)
