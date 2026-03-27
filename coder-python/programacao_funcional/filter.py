@@ -4,7 +4,7 @@ pessoas = [
     {'nome': 'mariana', 'idade': 18},
     {'nome': 'arthur', 'idade': 26},
     {'nome': 'rebeca', 'idade': 6},
-    {'nome': 'thiago', 'idade': 19},
+    {'nome': 'tiago', 'idade': 19},
     {'nome': 'gabriela', 'idade': 17},
 ]
 
