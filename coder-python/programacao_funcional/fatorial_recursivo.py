@@ -5,3 +5,5 @@ def fatorial(n):
 
 if __name__ == '__main__':
     print(f'10! = {fatorial(10)}')
+    # 6 semanas em segundos é igual a 10!
+    print(6 * 7 * 24 * 60 * 60)
