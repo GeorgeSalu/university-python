@@ -3,7 +3,7 @@ from locale import setlocale, LC_ALL
 from calendar import mdays, month_name
 from functools import reduce
 
-# portuguues do Brasil
+# Portuguese do Brasil
 setlocale(LC_ALL, 'pt_BR')
 
 # Listar todos os meses do ano com 31 dias
