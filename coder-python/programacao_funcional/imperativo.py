@@ -1,4 +1,5 @@
-#listar todos os meses do ano com 31 dias
+#!/usr/local/bin/python3
+# listar todos os meses do ano com 31 dias
 from locale import setlocale, LC_ALL
 from calendar import mdays, month_name
 
