@@ -12,3 +12,7 @@ pessoas = [
 
 soma_idades = reduce(lambda idades, p: idades + p['idade'], pessoas, 0)
 print(soma_idades)
+
+menores = filter(lambda p: p['idade'] < 18, pessoas)
+soma_idades_menores = reduce(lambda idades, p: idades + p['idade'], menores, 0)
+print(soma_idades_menores)
