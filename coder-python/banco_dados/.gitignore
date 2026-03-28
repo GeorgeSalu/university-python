@@ -1,2 +1,45 @@
+# Python
+# Byte-code files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
 .venv
+
+# other common virtual env dirs
+lib/
+bin/
+include/
+
+# IDE specific files
 __pycache__
+.idea/  # PyCharm
+.vscode/ # VS Code
+*.swp # vim
+
+# Distribution / build files
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+*.whl
+
+# Test and coverage
+.coverage
+.tox/
+.pytest_cache/
+
+# Sensitive data and environment variables
+.env
+.flaskenv
+secrets.toml
+# service account keys
+keys/
+
+# Editors and miscellaneous
+.DS_Store # macOS specific
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
