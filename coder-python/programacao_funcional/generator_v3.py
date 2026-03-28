@@ -1,7 +1,10 @@
 #!/usr/local/bin/python3
 # desafio: implementar uma função que sempre vai retornar um proximo valor com generator
 def sequence():
-    pass
+    num = 0
+    while True:
+        num += 1
+        yield num
 
 
 if __name__ == '__main__':
