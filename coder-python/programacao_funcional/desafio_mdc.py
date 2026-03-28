@@ -1,7 +1,9 @@
 #!/usr/local/bin/python3
 
 def mdc(numeros):
-    pass
+    def calc(diviso):
+        return diviso if sum(map(lambda x: x % diviso, numeros)) == 0 else calc(diviso - 1)
+    return calc(min(numeros))
 
 if __name__ == "__main__":
     print(mdc([21,7])) # 7
