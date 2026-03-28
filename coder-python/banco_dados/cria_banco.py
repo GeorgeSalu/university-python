@@ -9,4 +9,4 @@ conexao = connect(
 )
 
 cursor = conexao.cursor()
-cursor.execute("CREATE DATABASE agenda")
+cursor.execute("CREATE DATABASE IF NOT EXISTS agenda")
