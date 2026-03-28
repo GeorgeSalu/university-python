@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 try:
     from mysql import connector
 except ModuleNotFoundError:
