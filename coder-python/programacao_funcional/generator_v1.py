@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 def cores_arco_iris():
     yield 'vermelho'
     yield 'laranja'
