@@ -1,8 +1,8 @@
 #!/usr/local/bin/python3
 
 def mdc(numeros):
-    def calc(diviso):
-        return diviso if sum(map(lambda x: x % diviso, numeros)) == 0 else calc(diviso - 1)
+    def calc(divisor):
+        return divisor if sum(map(lambda x:x % divisor, numeros)) == 0 else calc(divisor - 1)
     return calc(min(numeros))
 
 if __name__ == "__main__":
