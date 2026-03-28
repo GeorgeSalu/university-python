@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from mysql.connector import connect
 
 conexao = connect(
