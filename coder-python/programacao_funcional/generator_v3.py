@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-# desafio: implementar uma função que sempre vai retornar um proximo valor
+# desafio: implementar uma função que sempre vai retornar um proximo valor com generator
 def sequence():
     pass
 
