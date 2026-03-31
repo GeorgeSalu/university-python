@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from bd import nova_conexao
 
 with nova_conexao() as conexao:
