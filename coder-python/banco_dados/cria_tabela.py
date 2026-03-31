@@ -3,11 +3,11 @@ from mysql.connector import ProgrammingError
 from bd import nova_conexao
 
 tabela_contatos = """
-    CREATE TABLE contatos (nova VARCHAR(50), telm VARCHAR(40));
+    CREATE TABLE IF NOT EXISTS contatos (nova VARCHAR(50), telm VARCHAR(40));
 """
 
 tabela_emails = """
-    CREATE TABLE emails (
+    CREATE TABLE IF NOT EXISTS emails (
         id INT AUTO_INCREMENT PRIMARY KEY,
         dono VARCHAR(50)
     )
