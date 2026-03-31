@@ -12,11 +12,13 @@ tabela_emails = """
         dono VARCHAR(50)
     )
 """
-
-with nova_conexao() as conexao:
-    try:
-        cursor = conexao.cursor()
-        cursor.execute(tabela_contatos)
-        cursor.execute(tabela_emails)
-    except ProgrammingError as erro:
-        print(f'Erro: {erro.msg}')
+try:
+    with nova_conexao() as conexao:
+        try:
+            cursor = conexao.cursor()
+            cursor.execute(tabela_contatos)
+            cursor.execute(tabela_emails)
+        except ProgrammingError as erro:
+            print(f'Erro: {erro.msg}')
+except ProgrammingError as erro:
+    print(f'Erro: {erro.msg}')
