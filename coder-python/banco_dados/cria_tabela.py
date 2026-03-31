@@ -21,4 +21,4 @@ try:
         except ProgrammingError as erro:
             print(f'Erro: {erro.msg}')
 except ProgrammingError as erro:
-    print(f'Erro: {erro.msg}')
+    print(f'Erro CONEXAO: {erro.msg}')
