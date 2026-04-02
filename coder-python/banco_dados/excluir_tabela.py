@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from mysql.connector.errors import ProgrammingError
 from bd import nova_conexao
 
