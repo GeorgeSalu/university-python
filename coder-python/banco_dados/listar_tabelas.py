@@ -1,3 +1,9 @@
 #!/usr/local/bin/python3
+from bd import nova_conexao
 
-# desafio: listar tabelas
+with nova_conexao() as conexao:
+    cursor = conexao.cursor()
+    cursor.execute('SHOW TABLES')
+
+    for i, table in enumerate(cursor, start=1):
+        print(f'Tabela {i}: {table[0]}')
