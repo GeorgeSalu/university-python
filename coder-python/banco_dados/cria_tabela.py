@@ -3,7 +3,7 @@ from mysql.connector import ProgrammingError
 from bd import nova_conexao
 
 tabela_contatos = """
-    CREATE TABLE IF NOT EXISTS contatos (nova VARCHAR(50), telm VARCHAR(40));
+    CREATE TABLE IF NOT EXISTS contatos (nova VARCHAR(50), tel VARCHAR(40));
 """
 
 tabela_emails = """
