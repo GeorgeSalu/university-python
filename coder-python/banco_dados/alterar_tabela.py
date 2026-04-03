@@ -9,4 +9,4 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.execute(sql)
     except ProgrammingError as erro:
-        print(f'ERRO: {erro}')
+        print(f'ERRO: {erro.msg}')
