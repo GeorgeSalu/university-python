@@ -13,4 +13,4 @@ with nova_conexao() as conexao:
         print(f'Erro: {e.msg}')
     else:
         for contato in contatos:
-            print(f'{contato[2]:2d} - {contato[0]:20s} - Telefone {contato[1]}')
+            print(f'id : {contato[2]:2d} - Nome: {contato[0]:20s} - Telefone: {contato[1]}')
