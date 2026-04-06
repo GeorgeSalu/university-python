@@ -1,0 +1,10 @@
+#!/usr/local/bin/python3
+from bd import nova_conexao
+
+sql = "SELECT nome FROM contatos ORDER BY nome DESC"
+
+with nova_conexao() as conexao:
+    cursor = conexao.cursor()
+    cursor.execute(sql)
+
+    print('\n'.join(str(registro) for registro in cursor))
