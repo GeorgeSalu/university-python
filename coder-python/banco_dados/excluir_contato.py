@@ -13,4 +13,4 @@ with nova_conexao() as conexao:
     except ProgrammingError as e:
         print(f'ERRO: {e.msg}')
     else:
-        print(f'ERRO: {cursor.rowcount} registro(s) deletados.')
+        print(f'{cursor.rowcount} registro(s) deletado(s).')
