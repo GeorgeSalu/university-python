@@ -1,0 +1,27 @@
+from mysql.connector.errors import ProgrammingError
+from bd import nova_conexao
+
+selecionar_grupo = 'SELECT id FROM grupos WHERE descricao = %s'
+atualizacontatos = 'UPDATE contatos SET grupo_id = %s WHERE nome = %s'
+
+contato_grupo = {
+    'Bia alterada': 'Casa',
+    'Lu': 'Trabalho',
+    'Gui': 'Casa',
+    'Beca': 'Trabalho',
+    'Lucas': 'Casa',
+    'Bia': 'Trabalho',
+}
+
+with nova_conexao() as conexao:
+    try:
+        cursor = conexao.cursor()
+        for contato, grupo in contato_grupo.items():
+            cursor.execute(selecionar_grupo, ( grupo, ))
+            grupo_id = cursor.fetchone()[0]
+            cursor.execute(atualizacontatos, ( grupo_id, contato ))
+            conexao.commit()
+    except ProgrammingError as e:
+        print(f'Erro: {e.msg}')
+    else:
+        print('contatos associados')
