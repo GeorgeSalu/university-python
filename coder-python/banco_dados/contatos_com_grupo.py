@@ -17,7 +17,7 @@ with nova_conexao() as conexao:
         cursor.execute(sql)
         contatos = cursor.fetchall()
     except ProgrammingError as e:
-        print(f'Erro: {e}')
+        print(f'Erro: {e.msg}')
     else:
         for contato in contatos:
             print(f'{contato["grupo"]} - {contato["contato"]}')
