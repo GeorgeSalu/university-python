@@ -16,4 +16,4 @@ with nova_conexao() as conexao:
     except ProgrammingError as e:
         print(f'Erro: {e.msg}')
     else:
-        print(f'Foram incluidos {cursor.rowcount} registros.')
+        print(f'Foram incluídos {cursor.rowcount} registros.')
