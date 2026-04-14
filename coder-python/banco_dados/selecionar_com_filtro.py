@@ -7,5 +7,5 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.execute(sql)
 
-        for x in cursor:
-            print(x)
+        for contato in cursor:
+            print(contato)
