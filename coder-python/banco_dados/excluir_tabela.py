@@ -6,5 +6,5 @@ with nova_conexao() as conexao:
     try:
         cursor = conexao.cursor()
         cursor.execute("DROP TABLE IF EXISTS emails")
-    except ProgrammingError as error:
-        print(f'Erro: {error.msg}')
+    except ProgrammingError as erro:
+        print(f'Erro: {erro.msg}')

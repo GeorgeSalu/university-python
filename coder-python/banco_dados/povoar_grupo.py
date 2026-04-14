@@ -13,7 +13,7 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.executemany(sql, args)
         conexao.commit()
-    except ProgrammingError as e:
-        print(f'Erro: {e.msg}')
+    except ProgrammingError as erro:
+        print(f'Erro: {erro.msg}')
     else:
         print(f'Foram incluídos {cursor.rowcount} registros.')

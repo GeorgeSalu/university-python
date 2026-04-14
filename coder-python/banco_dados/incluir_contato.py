@@ -10,7 +10,7 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.execute(sql, args)
         conexao.commit()
-    except ProgrammingError as e:
-        print(f'Erro: {e.msg}')
+    except ProgrammingError as erro:
+        print(f'Erro: {erro.msg}')
     else:
         print('registro incluído, ID:', cursor.rowcount)
