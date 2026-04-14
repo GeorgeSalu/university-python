@@ -5,7 +5,7 @@ from bd import nova_conexao
 selecionar_grupo = 'SELECT id FROM grupos WHERE descricao = %s'
 atualizar_contatos = 'UPDATE contatos SET grupo_id = %s WHERE nome = %s'
 
-contato_grupo = {
+contatos_grupos = {
     'Bia alterada': 'Casa',
     'Lu': 'Trabalho',
     'Gui': 'Casa',
@@ -17,7 +17,7 @@ contato_grupo = {
 with nova_conexao() as conexao:
     try:
         cursor = conexao.cursor()
-        for contato, grupo in contato_grupo.items():
+        for contato, grupo in contatos_grupos.items():
             cursor.execute(selecionar_grupo, ( grupo, ))
             grupo_id = cursor.fetchone()[0]
             cursor.execute(atualizar_contatos, (grupo_id, contato))
