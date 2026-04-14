@@ -22,7 +22,7 @@ with nova_conexao() as conexao:
             grupo_id = cursor.fetchone()[0]
             cursor.execute(atualizar_contatos, (grupo_id, contato))
             conexao.commit()
-    except ProgrammingError as e:
-        print(f'Erro: {e.msg}')
+    except ProgrammingError as erro:
+        print(f'Erro: {erro.msg}')
     else:
         print('contatos associados')

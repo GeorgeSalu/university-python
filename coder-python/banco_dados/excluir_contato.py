@@ -10,7 +10,7 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.execute(sql, args)
         conexao.commit()
-    except ProgrammingError as e:
-        print(f'ERRO: {e.msg}')
+    except ProgrammingError as erro:
+        print(f'ERRO: {erro.msg}')
     else:
         print(f'{cursor.rowcount} registro(s) deletado(s).')

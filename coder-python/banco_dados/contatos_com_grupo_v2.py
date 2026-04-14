@@ -20,8 +20,8 @@ with nova_conexao() as conexao:
             contatos = cursor.fetchall()
         finally:
             cursor.close()
-    except ProgrammingError as e:
-        print(f'Erro: {e.msg}')
+    except ProgrammingError as erro:
+        print(f'Erro: {erro.msg}')
     else:
         agrupados = defaultdict(list)
         for contato in contatos:
