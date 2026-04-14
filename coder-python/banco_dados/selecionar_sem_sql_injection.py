@@ -10,5 +10,5 @@ with nova_conexao() as conexao:
         cursor = conexao.cursor()
         cursor.execute(sql, args)
 
-        for x in cursor:
-            print(x)
+        for contato in cursor:
+            print(contato)
