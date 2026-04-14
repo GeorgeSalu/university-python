@@ -16,6 +16,7 @@ alterar_tabela_contato_1 = """
 alterar_tabela_contato_2 = """
     ALTER TABLE contatos ADD FOREIGN KEY (grupo_id) REFERENCES grupos(id) 
 """
+
 try:
     with nova_conexao() as conexao:
         try:
