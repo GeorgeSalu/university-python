@@ -12,6 +12,7 @@ tabela_emails = """
         dono VARCHAR(50)
     )
 """
+
 try:
     with nova_conexao() as conexao:
         try:
