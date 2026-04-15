@@ -4,4 +4,4 @@ try:
 except ModuleNotFoundError:
     print("MYSQL Connector não instalado")
 else:
-    print("MYSQL Connector instalado")
+    print('MySQL Connector instalado e pronto!')
