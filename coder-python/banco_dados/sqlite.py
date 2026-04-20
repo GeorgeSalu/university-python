@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from sqlite3 import connect, ProgrammingError
 
 tabela_grupo = """
