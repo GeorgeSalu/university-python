@@ -12,6 +12,7 @@ tabela_contatos = """
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nome VARCHAR(50),
         tel VARCHAR(40),
-        grupo_id INTEGER
+        grupo_id INTEGER,
+        FOREIGN KEY (grupo_id) REFERENCES grupos(id)
     )
 """
