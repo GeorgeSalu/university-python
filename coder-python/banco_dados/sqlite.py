@@ -17,3 +17,6 @@ tabela_contatos = """
         FOREIGN KEY (grupo_id) REFERENCES grupos(id)
     )
 """
+
+insert_grupos = 'INSERT INTO grupos (descricao) VALUES (?)'
+insert_contatos = 'INSERT INTO contatos (nome, tel, grupo_id) VALUES (?, ?, ?)'
