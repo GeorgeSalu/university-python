@@ -6,3 +6,12 @@ tabela_grupo = """
         descricao VARCHAR(30)
     )
 """
+
+tabela_contatos = """
+    CREATE TABLE IF NOT EXISTS contatos (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nome VARCHAR(50),
+        tel VARCHAR(40),
+        grupo_id INTEGER
+    )
+"""
