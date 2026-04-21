@@ -18,7 +18,11 @@ tabela_contatos = """
     )
 """
 
-insert_grupos = 'INSERT INTO grupos (descricao) VALUES (?)'
+insert_grupos = """
+    INSERT INTO 
+        grupos (descricao) 
+    VALUES (?)
+"""
 insert_contatos = """
     INSERT INTO 
         contatos (nome, tel, grupo_id) 
