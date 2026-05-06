@@ -1,5 +1,5 @@
 #!/usr/local/bin/python3
-from sqlite3 import connect, ProgrammingError
+from sqlite3 import connect, ProgrammingError, Row
 
 tabela_grupo = """
     CREATE TABLE IF NOT EXISTS grupos (
@@ -42,3 +42,31 @@ select_contatos = """
     INNER JOIN grupos ON contatos.grupo_id = grupos.id
     ORDER BY grupo, contato
 """
+
+try:
+    conexao = connect(':memory:')
+    conexao.row_factory = Row
+
+    cursor = conexao.cursor()
+    cursor.execute(tabela_grupo)
+    cursor.execute(tabela_contatos)
+
+    cursor.executemany(insert_grupos, (('Casa',), ('Trabalho',)))
+    cursor.execute(select_grupos)
+    grupos = {row['descricao']: row['id'] for row in cursor.fetchall()}
+
+    contatos = (
+        ('Arthur', '456', grupos['Casa']),
+        ('Paulo', '789', grupos['Casa']),
+        ('Ângelo', '000', grupos['Trabalho']),
+        ('Eduardo', '987', None),
+        ('Yuri', '654', grupos['Casa']),
+        ('Leonardo', '321', grupos['Casa']),
+    )
+    cursor.executemany(insert_contatos, contatos)
+
+    cursor.execute(select_contatos)
+    for contato in cursor:
+        print(contato['contato'], contato['grupo'])
+except ProgrammingError as e:
+    print(f'Erro: {e.msg}')
