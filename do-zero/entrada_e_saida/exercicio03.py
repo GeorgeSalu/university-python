@@ -4,7 +4,7 @@
 # calcule e exiba o valor do desconto e o preço final do produto
 
 preco = float(input("digite o preco do produto : "))
-p = float(input("digite o percentual de desconto : "))
+p = float(input("digite o percentual de desconto (0 - 100%): "))
 
 desconto = preco * (p/100)
 final = preco - desconto
