@@ -5,11 +5,11 @@
 # e apresente a bonificação de cada funcionario na tela
 
 salario = float(input("Qual o seu salario ? : "))
-ano_admissao = int(input("Qual o ano de nascimento ? : "))
+ano_admissao = int(input("Qual o ano de admissão ? : "))
 ano_atual = int(input("Em que ano estamos ? : "))
 
 tempo = ano_atual - ano_admissao
-if (tempo > 5):
+if tempo > 5:
     bonus = salario * 0.2
 else:
     bonus = salario * 0.1
