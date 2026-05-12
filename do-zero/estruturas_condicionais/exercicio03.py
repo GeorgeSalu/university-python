@@ -4,7 +4,7 @@
 # Escreva um algoritmo que leia o salário do funcionario e o seu tempo de empresa,
 # e apresente a bonificação de cada funcionario na tela
 
-salario = float(input("Qual o seu salario ? : "))
+salario = float(input("Qual o seu salário ? : "))
 ano_admissao = int(input("Qual o ano de admissão ? : "))
 ano_atual = int(input("Em que ano estamos ? : "))
 
@@ -15,6 +15,6 @@ else:
     bonus = salario * 0.1
 
 print(f"voce tem {tempo} anos dentro da empresa")
-print(f"seu salario é de {salario:.2f} reais")
-print(f"E sua bonificacao é de {bonus} reais")
-print(f"Salario final: {salario + bonus}")
+print(f"seu salário é de {salario:.2f} reais")
+print(f"E sua bonificação é de {bonus} reais")
+print(f"Salário final: {salario + bonus}")
