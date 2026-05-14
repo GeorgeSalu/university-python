@@ -13,16 +13,16 @@ op = input("Qual operação deseja realizar ? ")
 x = int(input("digite o primeiro numero : "))
 y = int(input("digite o segundo numero : "))
 
-if (op == "+"):
+if op == "+":
     res = x + y
     print(f"Resultado: {x} + {y} = {res} ")
-elif (op == "-"):
+elif op == "-":
     res = x - y
     print(f"Resultado: {x} - {y} = {res} ")
-elif (op == "*"):
+elif op == "*":
     res = x * y
     print(f"Resultado: {x} * {y} = {res} ")
-elif (op == "/"):
+elif op == "/":
     res = x / y
     print(f"Resultado: {x} / {y} = {res} ")
 else:
