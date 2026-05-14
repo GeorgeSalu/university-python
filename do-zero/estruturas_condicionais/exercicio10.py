@@ -1,4 +1,4 @@
-# Exercício 9
+# Exercício 10
 # Uma loja de departamentos está oferecendo diferentes formas de pagamento
 # conforme opções listadas a seguir
 # faça um algoritmo que leia o valor total de uma compra e calcule o valor de pagamento final
