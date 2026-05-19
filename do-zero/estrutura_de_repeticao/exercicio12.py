@@ -1,4 +1,4 @@
-# Exercício 10
+# Exercício 12
 # Escreva um algoritmo que obtenha do usuario uma frase de tamanho entre 10 e 30 caractres
 # (faça a validação deste dado)
 #
