@@ -5,3 +5,17 @@
 # "Boa noite, senhora, a sua idade é <IDADE>" caso género feminino
 #
 # O programa deve encerrar quando o usuário digitar uma idade negativa
+
+idade = int(input("digite sua idade: "))
+while idade > 0:
+    sexo = input("digite seu sexo (M/F): ")
+    if sexo == "M":
+        print("seu sexo: Masculino")
+    else:
+        if  sexo == "F":
+            print("seu sexo: Feminino")
+        else:
+            print("opcao invalida")
+    idade = int(input("digite sua idade: "))
+
+print("encerrado")
