@@ -1,7 +1,7 @@
 # Exercício 9
-# Escreva um algoritmo que repetidamente pergunte ao usuario qual sua idade e seu sexo (M ou F)
-# para cada resposta o programa deve imprimier a mensagem
-# "Boa noite, Senhor, sua idade é <IDADE>" caso genero masculino
-# "Boa noite, Senhora, sua idade é <IDADE>" caso genero feminino
+# Escreva um algoritmo que repetidamente pergunte ao usuário qual a sua idade e o seu sexo (M ou F)
+# para cada resposta o programa deve imprimir a mensagem
+# "Boa noite, senhor, a sua idade é <IDADE>" caso género masculino
+# "Boa noite, senhora, a sua idade é <IDADE>" caso género feminino
 #
-# O progrma deve encerrar quando o usuario digitar uma idade negativa
+# O programa deve encerrar quando o usuário digitar uma idade negativa
