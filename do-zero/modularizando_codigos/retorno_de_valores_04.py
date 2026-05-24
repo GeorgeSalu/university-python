@@ -6,5 +6,4 @@ def calcular(a,b):
 
 # programa principal
 resultado_soma, resultado_multiplicacao = calcular(4,5)
-print(resultado_soma)
-print(resultado_multiplicacao)
+print(f"resultado_soma: {resultado_soma}, resultado_multiplicacao: {resultado_multiplicacao}")
