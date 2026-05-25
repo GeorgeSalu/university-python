@@ -8,7 +8,7 @@ def valida_int(pergunta, min, max):
         x = int(input(pergunta))
     return x
 
-def soma(inicio, fim):
+def soma_intervalo(inicio, fim):
     soma = 0
     i = inicio
     while i <= fim:
@@ -19,4 +19,4 @@ def soma(inicio, fim):
 # programa principal
 x = valida_int('digite um valor inteiro e positivo : ', 1,9999)
 y = valida_int('digite um segundo valor inteiro e positivo : ', 1,9999)
-print(f"Somatoria entre os valores {x} e {y} é {soma(x, y)}")
+print(f"Somatoria entre os valores {x} e {y} é {soma_intervalo(x, y)}")
