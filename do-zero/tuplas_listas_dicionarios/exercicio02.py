@@ -4,3 +4,15 @@
 # e outro parametro como sendo uma quantidade arbitraria de números empacotados
 # Dentro dessa função, encontre o maior número dentre todos os números recebidos e escreva na tela
 # dentro da função, a mensagem e o maior valor
+
+def maior(msg, *num):
+    maior = 0
+    for i in num:
+        if i > maior:
+            maior = i
+
+    print(msg, maior)
+
+
+# programa principal
+maior('maior : ',2,3,4,5)
