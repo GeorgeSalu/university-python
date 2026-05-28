@@ -12,5 +12,5 @@ print(mercado[0][0])
 # quanto custa um tomate
 print(mercado[1][2])
 
-# quanso sacos de arroz foram comprados 
+# quanso sacos de arroz foram comprados
 print(mercado[2][1])
