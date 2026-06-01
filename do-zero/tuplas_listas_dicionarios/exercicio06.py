@@ -1,5 +1,5 @@
 # Exercicio 5
-# escreva um algoritmo que leia o nome, alguta e peso de pessoas e armazene as informações em uma lista
+# escreva um algoritmo que leia o nome, altura e peso de pessoas e armazene as informações numa lista
 # o programa deve ir cadastrando um número indeterminado de dados e armazenar dentro da lista também o
 # IMC da pessoa. Ao final do programa, imprima a lista completa e também
 # o total de cadastros
