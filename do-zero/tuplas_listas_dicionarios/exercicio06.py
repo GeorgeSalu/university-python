@@ -12,10 +12,11 @@ pessoas = []
 imc = lambda peso, altura: peso / (altura * 2)
 
 while True:
-    nome = input("Nome")
-    altura = float(input("Altura"))
-    peso = float(input("Peso"))
+    nome = input("Nome : ")
+    altura = float(input("Altura : "))
+    peso = float(input("Peso : "))
     x = imc(peso, altura)
+    pessoas.append([nome, altura, peso, x])
 
     res = input("Quer continuar? [S/N]")
     if res in 'Nn':
@@ -24,3 +25,14 @@ while True:
 print("cadastros ", pessoas)
 print("Total de cadastros : ", len(pessoas))
 
+maior = 0
+menor = 99
+for cadastro in pessoas:
+    if (cadastro[3] > maior):
+        maior = cadastro[3]
+    if (cadastro[3] < menor):
+        menor = cadastro[3]
+
+
+print("maior imc: ", maior)
+print("menor imc: ", menor)
