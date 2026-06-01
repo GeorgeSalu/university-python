@@ -10,8 +10,8 @@ while x >= 0:
     x = float(input("Digite uma nota: "))
 
 soma = 0
-for vlores in notas:
-    soma += vlores
+for valores in notas:
+    soma += valores
 
 media = soma / len(notas)
 print(notas)
