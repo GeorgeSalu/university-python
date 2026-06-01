@@ -5,5 +5,5 @@
 # o total de cadastros
 # a pessoa com maior IMC
 # a pessoa com menor IMC
-# # o cálculo do IMC deve ser realizado empregando uma função lambda e é dado como : IMC = peso / (altura^2)
+# o cálculo do IMC deve ser realizado empregando uma função lambda e é dado como : IMC = peso / (altura^2)
 # onde a massa é dado em quilograma e a altura em metros
