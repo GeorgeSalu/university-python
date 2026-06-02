@@ -9,3 +9,27 @@
 # produto e o total final do pedido. De baixa o sistema descontando o que foi comprado do total, imprima na tela o estoque restante
 
 loja = {'cenoura':[100,0.99], 'brocolis':[50,3.99], 'batata':[200,0.49], 'cebola':[75,1.10] }
+
+pedido = []
+while True:
+    item_nome = input("Qual o nome do produto : ")
+    item_qtd = int(input("Dejesa comprar quantas unidades? : "))
+    pedido.append([item_nome, item_qtd])
+
+    res = input("Deseja adicionar mas um produto ao carrinho? [S/N] ")
+    if res in 'Nn':
+        break
+
+
+total = 0
+print('\nVendas')
+for item in pedido:
+    produto = item[0]
+    qtd = item[1]
+    preco = loja[produto][1]
+    valor_produto = preco * qtd
+    print(f"{produto} - {qtd} X {preco} = {valor_produto}")
+    loja[produto][0] -= qtd
+    total += valor_produto
+
+print(f"Custo total : {total}")
