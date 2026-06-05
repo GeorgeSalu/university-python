@@ -5,7 +5,7 @@
 import json
 
 # Lendo dados de um arquivo
-with open('saida.json', 'r', encoding='utf-8') as arquivo:
+with open('dados.json', 'r', encoding='utf-8') as arquivo:
     dados_carregados = json.load(arquivo)
 
 print(dados_carregados)
