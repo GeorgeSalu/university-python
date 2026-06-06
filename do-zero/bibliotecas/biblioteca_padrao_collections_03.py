@@ -1,7 +1,8 @@
-# defaultdict (Dicionário com valores padrão)
-# Evita erros de KeyError ao tentar acessar chaves que ainda não existem, definindo um tipo padrão para elas
-from collections import defaultdict
+# deque (Fila dupla)
+# Uma lista otimizada para inserções e remoções rápidas em ambas as extremidades (início e fim).
+from collections import deque
 
-dicionario = defaultdict(int)
-dicionario['maça'] += 3
-print(dicionario['banana'])
+fila = deque(['Ana', 'Bruno', 'Carlos'])
+fila.append('Diana')  # Adiciona no final
+fila.popleft()        # Remove no início (muito rápido)
+print(fila)           # Saída: deque(['Bruno', 'Carlos', 'Diana'])
