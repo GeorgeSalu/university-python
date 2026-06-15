@@ -1,4 +1,4 @@
-# isupper() = retorna True apenas se todos os caracteres da string puderem ser exibidos na tela de forma visível e não forem
+# isprintable() = retorna True apenas se todos os caracteres da string puderem ser exibidos na tela de forma visível e não forem
 # caracteres de controle ocultos (como quebras de linha ou tabulações). Se a string estiver vazia, ela também retorna True
 
 texto = "Olá, mundo!"
