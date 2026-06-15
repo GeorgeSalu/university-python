@@ -1,4 +1,5 @@
 # islower() = é uma função interna do Python que verifica se todos os caracteres alfabéticos de uma string estão em minúsculas.
+# Ele retorna True caso afirmativo e False caso contrário, ignorando números, espaços e caracteres especiais.
 
 texto = "python"
 print(texto.islower())
