@@ -6,3 +6,12 @@ print(nome_usuario.isascii())
 
 usuario_estrangeiro = "François"
 print(usuario_estrangeiro.isascii())
+
+def validar_usuario(nome):
+    if nome.isascii():
+        return "Nome de usuário válido."
+    else:
+        return "Erro: O nome contém caracteres inválidos."
+
+print(validar_usuario("User123"))  # Retorna: Nome de usuário válido.
+print(validar_usuario("João"))
