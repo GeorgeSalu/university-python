@@ -1,4 +1,4 @@
-palavra = input("digite ua palavra secreta: ").lower().strip()
+palavra = input("digite uma palavra secreta: ").lower().strip()
 
 for x in range(50):
     print()
