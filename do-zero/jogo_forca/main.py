@@ -21,13 +21,13 @@ while True:
 
     # condição de vitoria
     if adivinha == palavra:
-        print("voce acertou")
+        print("Você acertou!")
         break
 
     # tentativas
     tentativa = input("\nDigite uma letra: ").lower().strip()
     if tentativa in digitadas:
-        print("voce ja usou essa latra!")
+        print("Você já usou essa letra!")
         continue
     else:
         digitadas += tentativa
@@ -35,4 +35,4 @@ while True:
             acertos += tentativa
         else:
             erros += 1
-            print(f"voce errou")
+            print(f"Você errou!")
