@@ -61,7 +61,7 @@ while True:
         linha3 += " / \ "
     print(f"X{linha3}")
 
-    print(f"X\n=======")
+    print(f"X\n===================")
 
     # * CONDIÇÃO DE FIM DE JOGO
     if erros == 6:
