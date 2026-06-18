@@ -62,3 +62,9 @@ while True:
     print(f"X{linha3}")
 
     print(f"X\n=======")
+
+    # * CONDIÇÃO DE FIM DE JOGO
+    if erros == 6:
+        print('Enforcado!')
+        print(f'A palavra correta era {palavra}.')
+        break
