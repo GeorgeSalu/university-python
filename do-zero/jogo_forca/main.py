@@ -16,7 +16,7 @@ while True:
             adivinha += "\u2588"
     print(f"adivinhe ({len(palavra)} letras) : ")
     for letra in adivinha:
-        print(f"{letra}", end="")
+        print(f"{letra} ", end="")
     print()
 
     # condição de vitoria
