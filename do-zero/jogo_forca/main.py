@@ -36,3 +36,35 @@ while True:
         else:
             erros += 1
             print(f"Você errou!")
+
+    # desenhando a forca
+    print("X==:==")
+    print("X  :  ")
+    if erros >= 1:
+        print("X  0  ")
+    else:
+        print("X")
+
+    linha2 = ""
+    if erros == 2:
+        linha2 = "  |  "
+    elif erros == 3:
+        linha2 = "  /|  "
+    elif erros >= 4:
+        linha2 = "  /|\  "
+    print(f"X{linha2}")
+
+    linha3 = ""
+    if erros == 5:
+        linha3 += "  /  "
+    elif erros >= 6:
+        linha3 += "  / \  "
+    print(f"X{linha3}")
+
+    print(f"X\n===========")
+
+    # condição de fim de jogo
+    if erros == 6:
+        print("Enforcado!")
+        print(f"A palavra correta era {palavra}.")
+        break
