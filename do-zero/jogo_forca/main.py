@@ -1,4 +1,4 @@
-palavra = input("digite uma palavra secreta: ").lower().strip()
+palavra = input('Digite uma palavra secreta: ').lower().strip()
 
 for x in range(50):
     print()
@@ -13,21 +13,21 @@ while True:
         if letra in acertos:
             adivinha += letra
         else:
-            adivinha += "\u2588"
-    print(f"adivinhe ({len(palavra)} letras) : ")
+            adivinha += '\u2588'
+    print(f'ADIVINHE ({len(palavra)} letras): ')
     for letra in adivinha:
-        print(f"{letra} ", end="")
+        print(f'{letra} ', end='')
     print()
 
-    # condição de vitoria
+    # * CONDIÇÃO DE VITÓRIA
     if adivinha == palavra:
-        print("Você acertou!")
+        print('Você acertou!')
         break
 
-    # tentativas
-    tentativa = input("\nDigite uma letra: ").lower().strip()
+    # * TENTATIVAS
+    tentativa = input('\nDigite uma letra: ').lower().strip()
     if tentativa in digitadas:
-        print("Você já usou essa letra!")
+        print('Você já usou essa letra!')
         continue
     else:
         digitadas += tentativa
@@ -35,36 +35,30 @@ while True:
             acertos += tentativa
         else:
             erros += 1
-            print(f"Você errou!")
+            print('Você errou!')
 
-    # desenhando a forca
+    # * DESENHANDO A FORCA
     print("X==:==")
     print("X  :  ")
     if erros >= 1:
-        print("X  0  ")
+        print('X  O  ')
     else:
-        print("X")
+        print('X')
 
     linha2 = ""
     if erros == 2:
-        linha2 = "  |  "
+        linha2 = "  | "
     elif erros == 3:
-        linha2 = "  /|  "
+        linha2 = " /| "
     elif erros >= 4:
-        linha2 = "  /|\  "
+        linha2 = " /|\ "
     print(f"X{linha2}")
 
     linha3 = ""
     if erros == 5:
-        linha3 += "  /  "
+        linha3 += " / "
     elif erros >= 6:
-        linha3 += "  / \  "
+        linha3 += " / \ "
     print(f"X{linha3}")
 
-    print(f"X\n===========")
-
-    # condição de fim de jogo
-    if erros == 6:
-        print("Enforcado!")
-        print(f"A palavra correta era {palavra}.")
-        break
+    print(f"X\n=======")
