@@ -1,4 +1,5 @@
 # O Jogo da Forca em Python é um projeto clássico de adivinhação.
+# O programa sorteia uma palavra oculta, e o jogador tenta revelá-la letra por letra.
 palavra = input('Digite uma palavra secreta: ').lower().strip()
 
 for x in range(50):
