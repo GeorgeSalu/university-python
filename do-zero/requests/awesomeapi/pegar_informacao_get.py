@@ -1,7 +1,7 @@
 import requests
 
 requisicao = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL")
-# retorno da requesicao statusCode
+# retorno da requisição statusCode
 print(requisicao)
-# retorno da requisicao json
+# retorno da requisição json
 print(requisicao.json())
