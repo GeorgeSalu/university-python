@@ -15,3 +15,8 @@ print(dados_json)
 
 # Verificando Cabeçalhos de Resposta
 print(requisicao.headers["Content-Type"])
+
+
+# Recebendo Dados em JSON
+dados = requisicao.json()
+print(dados["USDBRL"])
