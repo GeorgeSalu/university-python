@@ -5,3 +5,7 @@ requisicao = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-B
 
 # Imprime o código de status (ex: 200 para sucesso)
 print(requisicao.status_code)
+
+# Converte o retorno diretamente para um dicionário Python (se a API retornar JSON)
+dados_json = requisicao.json()
+print(dados_json)
