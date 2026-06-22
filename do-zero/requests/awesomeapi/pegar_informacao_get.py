@@ -12,3 +12,6 @@ print(requisicao.status_code)
 # Converte o retorno diretamente para um dicionário Python (se a API retornar JSON)
 dados_json = requisicao.json()
 print(dados_json)
+
+# Verificando Cabeçalhos de Resposta
+print(requisicao.headers["Content-Type"])
