@@ -20,3 +20,5 @@ print(requisicao.headers["Content-Type"])
 # Recebendo Dados em JSON
 dados = requisicao.json()
 print(dados["USDBRL"])
+print(dados["EURBRL"])
+print(dados["BTCBRL"])
