@@ -29,5 +29,5 @@ print(dados["USDBRL"])
 print(dados["EURBRL"])
 print(dados["BTCBRL"])
 
-# .cookies: Acessa os cookies enviados ou definidos pelo servidor.
+# .cookies: acessa os cookies enviados ou definidos pelo servidor.
 print(requisicao.cookies)
