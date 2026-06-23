@@ -23,9 +23,11 @@ print(dados_text)
 # Verificando Cabeçalhos de Resposta
 print(requisicao.headers["Content-Type"])
 
-
 # Recebendo Dados em JSON
 dados = requisicao.json()
 print(dados["USDBRL"])
 print(dados["EURBRL"])
 print(dados["BTCBRL"])
+
+# .cookies: Acessa os cookies enviados ou definidos pelo servidor.
+print(requisicao.cookies)
