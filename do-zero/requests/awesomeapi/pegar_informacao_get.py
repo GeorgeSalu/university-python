@@ -9,6 +9,9 @@ print(requisicao.url)
 # Imprime o código de status (ex: 200 para sucesso)
 print(requisicao.status_code)
 
+# .raise_for_status(): Lança um erro automaticamente caso a requisição termine em falha (status 4xx ou 5xx)
+print(requisicao.raise_for_status())
+
 # Converte o retorno diretamente para um dicionário Python (se a API retornar JSON)
 dados_json = requisicao.json()
 print(dados_json)
