@@ -13,6 +13,10 @@ print(requisicao.status_code)
 dados_json = requisicao.json()
 print(dados_json)
 
+# .text: Retorna o conteúdo da resposta como uma string (muito usado para HTML ou texto simples)
+dados_text = requisicao.text
+print(dados_text)
+
 # Verificando Cabeçalhos de Resposta
 print(requisicao.headers["Content-Type"])
 
