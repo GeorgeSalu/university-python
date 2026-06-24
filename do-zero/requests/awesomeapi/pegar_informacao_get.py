@@ -26,10 +26,13 @@ print(requisicao.headers["Content-Type"])
 # Recebendo Dados em JSON
 dados = requisicao.json()
 print(dados["USDBRL"])
+print(dados["USDBRL"].get("code"))
 print(dados["USDBRL"].get("name"))
 print(dados["EURBRL"])
+print(dados["EURBRL"].get("code"))
 print(dados["EURBRL"].get("name"))
 print(dados["BTCBRL"])
+print(dados["BTCBRL"].get("code"))
 print(dados["BTCBRL"].get("name"))
 
 # .cookies: acessa os cookies enviados ou definidos pelo servidor.
