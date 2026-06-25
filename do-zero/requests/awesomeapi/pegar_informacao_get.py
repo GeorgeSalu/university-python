@@ -16,6 +16,9 @@ print(requisicao.raise_for_status())
 dados_json = requisicao.json()
 print(dados_json)
 
+# Ler Resposta em Bytes (Para Imagens/Arquivos)
+print(requisicao.content)
+
 # .text: Retorna o conteúdo da resposta como uma string (muito usado para HTML ou texto simples)
 dados_text = requisicao.text
 print(dados_text)
