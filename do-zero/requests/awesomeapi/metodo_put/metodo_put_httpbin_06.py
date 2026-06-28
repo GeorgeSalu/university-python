@@ -6,3 +6,5 @@ resposta = requests.put(
     "https://httpbin.org/put", auth=("usuario_teste", "senha123")
 )
 print(resposta.status_code)
+print(resposta.json())
+print(resposta.json()["headers"]["Authorization"])
