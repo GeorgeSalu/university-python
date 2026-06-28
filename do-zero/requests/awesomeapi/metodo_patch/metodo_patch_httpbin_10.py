@@ -1,5 +1,5 @@
 import requests
 
 # Desativando a Verificação SSL
-resposta = requests.patch("https://httpbin.org", verify=False)
+resposta = requests.patch("https://httpbin.org/patch", verify=False)
 print(resposta.status_code)
