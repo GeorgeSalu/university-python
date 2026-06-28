@@ -1,5 +1,6 @@
 import requests
 
+# Enviando dados como Dicionário (Formulário)
 url = "https://httpbin.org/patch"
 dados = {"status": "atualizado", "prioridade": 2}
 
