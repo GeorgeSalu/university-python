@@ -1,6 +1,6 @@
 import requests
 
-# patch - requisicao simples
+# patch - requisição simples
 url = "https://httpbin.org/patch"
 resposta = requests.patch(url)
 
