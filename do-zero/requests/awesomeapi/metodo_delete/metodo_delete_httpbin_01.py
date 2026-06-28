@@ -1,6 +1,6 @@
 import requests
 
-# patch - requisição simples
+# delete - requisição simples
 url = "https://httpbin.org/delete"
 resposta = requests.delete(url)
 
