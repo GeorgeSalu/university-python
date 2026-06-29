@@ -9,3 +9,4 @@ resposta = requests.patch(url, headers=meus_headers)
 
 print("Status Code:", resposta.status_code)
 print("Dados recebidos pelo servidor:", resposta.json())
+print(resposta.json()["headers"]["Authorization"])
