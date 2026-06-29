@@ -11,3 +11,6 @@ resposta = requests.delete(url, params=meus_params, data=dados_patch, headers=me
 
 print("Status Code:", resposta.status_code)
 print("Dados recebidos pelo servidor:", resposta.json())
+print(resposta.json()["headers"]["Authorization"])
+print(resposta.json()["args"])
+print(resposta.json()["form"])
