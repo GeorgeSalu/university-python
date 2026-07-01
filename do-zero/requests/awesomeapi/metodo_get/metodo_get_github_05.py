@@ -1,5 +1,6 @@
 import requests
 
+# get imagem
 resposta = requests.get('https://python.org')
 
 with open('logo.png', 'wb') as arquivo:
