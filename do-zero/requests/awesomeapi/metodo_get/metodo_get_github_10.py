@@ -1,5 +1,6 @@
 import requests
 
+# verificando status de resposta
 resposta = requests.get('https://api.github.com')
 
 if resposta.ok:  # Equivalente a resposta.status_code < 400
