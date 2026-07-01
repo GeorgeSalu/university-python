@@ -1,6 +1,6 @@
 import requests
 
-# verificando status de resposta
+# Verificando status de resposta
 # Se o código de status estiver entre 200 e 400, retornará True
 resposta = requests.get('https://api.github.com')
 
