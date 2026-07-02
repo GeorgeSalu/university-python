@@ -1,5 +1,5 @@
 import requests
 
-# post simples
+# requisição simples
 response = requests.post('https://httpbin.org/post')
 print(response.json())
