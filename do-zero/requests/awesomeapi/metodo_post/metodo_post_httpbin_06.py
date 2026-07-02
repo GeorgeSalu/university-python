@@ -1,5 +1,6 @@
 import requests
 
+# tratando timeout
 payload = {'dados': 'teste'}
 try:
     response = requests.post('https://httpbin.org/post', json=payload, timeout=5)
