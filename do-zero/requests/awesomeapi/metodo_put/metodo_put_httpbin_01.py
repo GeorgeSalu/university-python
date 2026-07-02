@@ -1,5 +1,5 @@
 import requests
 
-# put simples
+# requisição simples
 response = requests.put('https://httpbin.org/put')
 print(response.json())
